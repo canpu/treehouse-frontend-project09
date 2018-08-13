@@ -1,0 +1,55 @@
+/* Layout */
+@mixin flex($disp: flex, $dir: null, $wrap: null, $just: null,
+  $align-coaxis: null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  align-items: $align-coaxis;
+}
+
+@mixin grid($layout: null, $rows: null, $columns: null, $align: null, $just: null) {
+  display: grid;
+  grid-template-areas: $layout;
+  grid-template-rows: $rows;
+  grid-template-columns: $columns;
+  align-items: $align;
+  justify-content: $just;
+}
+
+/* Media Query */
+@mixin media($screen-type) {
+  @if $screen-type != 'sm' and $screen-type != 'md' and $screen-type != 'lg' and $screen-type != 'xl' {
+    @error "#{$screen-type} is not supported by media queries.";
+  }
+  @else {
+    $screen-size: map-get($breakpoints, $screen-type);
+    @media(min-width: $screen-size) {
+      @content;
+    }
+  }
+}
+
+@mixin allmedia($property, $values) {
+  #{$property}: #{map-get($values, 'mobile')};
+  @each $screen-type in $screen-types {
+    @if $screen-type != 'mobile' {
+        @include media($screen-type) {
+          #{$property}: #{map-get($values, $screen-type)};
+        }
+      }
+    }
+}
+
+/* BEM */
+@mixin element($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin modifier($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}

@@ -1,0 +1,266 @@
+/* Breakpoints */
+/* Colors */
+/* Navbar */
+/* Transition */
+/* Jumbotron */
+/* Fade-In Effect */
+/* Math Constants */
+/* Layout */
+/* Media Query */
+/* BEM */
+/* line 1, F:/Github/treehouse-frontend-project09/scss/utilities/_texts.scss */
+.text-nonselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Navbar Animation */
+/* line 3, F:/Github/treehouse-frontend-project09/scss/utilities/_animations.scss */
+.navbar-bg-primary {
+  background-color: #563d7c;
+}
+
+/* line 6, F:/Github/treehouse-frontend-project09/scss/utilities/_animations.scss */
+.navbar-bg-secondary {
+  background-color: rgba(86, 61, 124, 0.1);
+}
+
+/* line 9, F:/Github/treehouse-frontend-project09/scss/utilities/_animations.scss */
+.navbar-min-height-primary {
+  min-height: 50px !important;
+}
+
+/* line 12, F:/Github/treehouse-frontend-project09/scss/utilities/_animations.scss */
+.navbar-min-height-secondary {
+  min-height: 40px !important;
+}
+
+/* line 15, F:/Github/treehouse-frontend-project09/scss/utilities/_animations.scss */
+.navbar-height-primary {
+  height: 50px !important;
+}
+
+/* line 18, F:/Github/treehouse-frontend-project09/scss/utilities/_animations.scss */
+.navbar-height-secondary {
+  height: 40px !important;
+}
+
+/* Ripple Effect */
+/* line 24, F:/Github/treehouse-frontend-project09/scss/utilities/_animations.scss */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 27, F:/Github/treehouse-frontend-project09/scss/utilities/_animations.scss */
+.ripple-wave {
+  display: block;
+  background: rgba(50, 50, 50, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  opacity: 1;
+  transition-property: width, height, background-color, transform, opacity;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* line 1, F:/Github/treehouse-frontend-project09/scss/components/_typography.scss */
+* {
+  font-family: "Roboto Slab", "Roboto", georgia;
+}
+
+/* line 5, F:/Github/treehouse-frontend-project09/scss/components/_typography.scss */
+.navbar-brand {
+  font-family: "Tangerine", "Roboto", georgia;
+  font-size: 2rem;
+}
+
+/* line 10, F:/Github/treehouse-frontend-project09/scss/components/_typography.scss */
+#section-welcome h1 {
+  font-family: "Merriweather", "Roboto", georgia;
+}
+
+/* line 14, F:/Github/treehouse-frontend-project09/scss/components/_typography.scss */
+.short-introduction {
+  color: lightgrey;
+}
+
+/* line 1, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+.navbar {
+  transition-property: background-color, min-height, height;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+  justify-content: flex-end;
+}
+
+/* line 6, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+.navbar-container {
+  transition-property: height;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  /* line 6, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+  .navbar-container {
+    width: auto;
+    justify-content: space-between;
+  }
+}
+
+/* line 17, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+.navbar-brand {
+  transition: margin 0.25s linear;
+  height: 40px;
+}
+
+/* line 21, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+.navbar-list-wrapper {
+  justify-content: flex-end;
+  overflow: hidden !important;
+  transition: height 0.25s linear;
+}
+
+/* line 26, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+.navbar-toggler {
+  transition: margin 0.25s linear;
+  height: 32px;
+}
+
+/* line 29, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: 0 0 3px 3px rgba(0, 123, 255, 0.5);
+}
+
+/* line 33, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+.navbar-toggler-icon {
+  height: 90%;
+}
+
+/* line 37, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+.navbar .active {
+  border-radius: 0;
+}
+
+/* line 42, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+.nav-link {
+  transition-property: color, background-color, height;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 49, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+.nav-link:focus, .nav-link:hover {
+  outline: none;
+  color: white !important;
+}
+
+/* line 53, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+.nav-link:hover {
+  background-color: rgba(0, 98, 204, 0.75) !important;
+}
+
+/* line 58, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+.nav-item {
+  transition-property: height;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+}
+
+/* line 64, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+.active {
+  background-color: rgba(0, 86, 179, 0.75) !important;
+  color: white !important;
+}
+
+/* line 1, F:/Github/treehouse-frontend-project09/scss/components/_buttons.scss */
+.btn-outline-info {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* line 3, F:/Github/treehouse-frontend-project09/scss/components/_buttons.scss */
+.btn-outline-info:hover {
+  color: white;
+}
+
+/* line 8, F:/Github/treehouse-frontend-project09/scss/components/_buttons.scss */
+.btn-icon {
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  transition: background-position 0.5s linear;
+}
+
+/* line 16, F:/Github/treehouse-frontend-project09/scss/components/_buttons.scss */
+.btn-icon p {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 10px;
+  transform: translateY(-50px);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+/* line 27, F:/Github/treehouse-frontend-project09/scss/components/_buttons.scss */
+.btn-icon:hover {
+  background-position: center top 50px;
+}
+
+/* line 29, F:/Github/treehouse-frontend-project09/scss/components/_buttons.scss */
+.btn-icon:hover p {
+  transform: translateY(0);
+}
+
+/* line 35, F:/Github/treehouse-frontend-project09/scss/components/_buttons.scss */
+#btn-download-resume {
+  background-image: url("../images/download.svg");
+}
+
+/* line 39, F:/Github/treehouse-frontend-project09/scss/components/_buttons.scss */
+#btn-view-more {
+  background-image: url("../images/eye.svg");
+}
+
+/* line 1, F:/Github/treehouse-frontend-project09/scss/components/_sections.scss */
+#section-welcome {
+  min-height: 100vh;
+  background-color: #4c69b1;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+/* line 6, F:/Github/treehouse-frontend-project09/scss/components/_sections.scss */
+#section-welcome .icon {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+/* line 12, F:/Github/treehouse-frontend-project09/scss/components/_sections.scss */
+#section-education {
+  background-color: #928cc0;
+}
+
+/*# sourceMappingURL=../css/styles.map */

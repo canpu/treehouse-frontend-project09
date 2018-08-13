@@ -1,0 +1,43 @@
+/* Breakpoints */
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px
+);
+
+/* Colors */
+$color-primary: rgb(86, 61, 124); // purple
+$color-secondary: rgb(0, 123, 255); // blue
+$color-tertiary: rgb(76, 105, 177); //purple-blue
+$color-quaternary: rgb(146, 140, 192); // light purple
+$color-txt-primary: white;
+$color-ripple: rgba(50, 50, 50, 0.5); //grey
+$color-info: rgb(23, 164, 182); // light blue
+
+/* Navbar */
+$font-family-default: 'Roboto Slab', 'Roboto', georgia;
+$font-family-web-heading: 'Tangerine', 'Roboto', georgia;
+$font-family-other: 'Merriweather', 'Roboto', georgia;
+$font-size-web-heading: 2rem;
+$height-navbar-normal: 50px;
+$height-navbar-shrink: 40px;
+
+/* Transition */
+$transition-time-xs: 0.15s;
+$transition-time-sm: 0.25s;
+$transition-time-md: 0.5s;
+$transition-time-lg: 0.75s;
+$transition-time-xl: 1s;
+
+/* Jumbotron */
+$size-profile: 200px;
+$height-btn: 50px;
+$height-btn-text: 30px;
+$size-btn-icon: 30px;
+
+/* Fade-In Effect */
+$defaultOffsetDirection: 90; // from bottom to top
+
+/* Math Constants */
+$pi: 3.141592653;

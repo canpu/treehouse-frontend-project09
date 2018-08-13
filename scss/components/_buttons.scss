@@ -1,0 +1,41 @@
+.btn-outline-info {
+  color: rgba($color-txt-primary, 0.65);
+  &:hover {
+    color: $color-txt-primary;
+  }
+}
+
+.btn-icon {
+  overflow: hidden;
+  position: relative;
+  height: $height-btn;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $size-btn-icon $size-btn-icon;
+  transition: background-position $transition-time-md linear;
+  p {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: ($height-btn - $height-btn-text) / 2;
+    transform: translateY(-$height-btn);
+    transition-property: transform;
+    transition-duration: $transition-time-md;
+    transition-timing-function: linear;
+  }
+  &:hover {
+    background-position: center top $height-btn;
+    p {
+      transform: translateY(0);
+    }
+  }
+}
+
+#btn-download-resume {
+  background-image: url("../images/download.svg");
+}
+
+#btn-view-more {
+  background-image: url("../images/eye.svg");
+}

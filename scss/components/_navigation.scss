@@ -1,0 +1,67 @@
+.navbar {
+  transition-property: background-color, min-height, height;
+  transition-duration: $transition-time-sm;
+  transition-timing-function: linear;
+  justify-content: flex-end;
+  &-container {
+    transition-property: height;
+    transition-duration: $transition-time-sm;
+    transition-timing-function: linear;
+    width: 100%;
+    @include flex($dir: row, $just: flex-end, $align-coaxis: center);
+    @include media("md") {
+      width: auto;
+      justify-content: space-between;
+    }
+  }
+  &-brand {
+    transition: margin $transition-time-sm linear;
+    height: $height-navbar-shrink;
+  }
+  &-list-wrapper {
+    justify-content: flex-end;
+    overflow: hidden !important;
+    transition: height $transition-time-sm linear;
+  }
+  &-toggler {
+    transition: margin $transition-time-sm linear;
+    height: $height-navbar-shrink - 8px;
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 3px 3px rgba($color-secondary, 0.5);
+    }
+    &-icon {
+      height: 90%;
+    }
+  }
+  .active {
+    border-radius: 0;
+  }
+}
+
+.nav-link {
+  transition-property: color, background-color, height;
+  transition-duration: $transition-time-sm;
+  transition-timing-function: linear;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  &:focus, &:hover {
+    outline: none;
+    color: $color-txt-primary !important;
+  }
+  &:hover {
+    background-color: rgba(darken($color-secondary, 10%), 0.75) !important;
+  }
+}
+
+.nav-item {
+  transition-property: height;
+  transition-duration: $transition-time-sm;
+  transition-timing-function: linear;
+}
+
+.active {
+  background-color: rgba(darken($color-secondary, 15%), 0.75) !important;
+  color: $color-txt-primary !important;
+}

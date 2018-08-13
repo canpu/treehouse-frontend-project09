@@ -1,0 +1,14 @@
+#section-welcome {
+  min-height: 100vh;
+  background-color: $color-tertiary;
+  border-radius: 0;
+  margin-bottom: 0;
+  .icon {
+    max-width: $size-profile;
+    max-height: $size-profile;
+  }
+}
+
+#section-education {
+  background-color: $color-quaternary;
+}

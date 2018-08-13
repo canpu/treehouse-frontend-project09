@@ -1,0 +1,41 @@
+/* Navbar Animation */
+.navbar {
+  &-bg-primary {
+    background-color: $color-primary;
+  }
+  &-bg-secondary {
+    background-color: rgba($color-primary, 0.1);
+  }
+  &-min-height-primary {
+    min-height: $height-navbar-normal !important;
+  }
+  &-min-height-secondary {
+    min-height: $height-navbar-shrink !important;
+  }
+  &-height-primary {
+    height: $height-navbar-normal !important;
+  }
+  &-height-secondary {
+    height: $height-navbar-shrink !important;
+  }
+}
+
+/* Ripple Effect */
+.ripple {
+  position: relative;
+  overflow: hidden;
+  &-wave {
+    display: block;
+    background: $color-ripple;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+    transition-property: width, height, background-color, transform, opacity;
+    transition-duration: $transition-time-sm;
+    transition-timing-function: ease-in;
+    overflow: hidden;
+    pointer-events: none;
+  }
+}
