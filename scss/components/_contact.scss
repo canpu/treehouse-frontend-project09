@@ -72,7 +72,6 @@
 $social-icons: ('gmail', 'facebook', 'twitter', 'linkedin', 'github', 'treehouse');
 @each $icon in $social-icons {
   #icon-#{$icon} {
-    box-shadow: red;
     .outer-shape {
       fill: transparent;
     }

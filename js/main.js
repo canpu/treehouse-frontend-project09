@@ -138,7 +138,7 @@ $.ajax({
 
     function createEducationPage(educationIndex) {
       let education = educationExperiences[educationIndex];
-      let $page = $(`<div class="education-page" page="${educationIndex + 1}"></div>`);
+      let $page = $(`<div class="education-page" data-page="${educationIndex + 1}"></div>`);
       let pages = document.querySelectorAll("#education-book .education-page");
       let $previousBackImg = $(pages[educationIndex]).find(".education-page-back-img");
       let programName = education.degreeAbbreviation != null ? education.degreeAbbreviation : "";
@@ -150,15 +150,15 @@ $.ajax({
       let track = education.track != null ? createEducationPageElement(`${education.track} Track`) : "";
       let brief = education.brief != null ? education.brief.reduce((html, paragraph) => html += `<p class='education-item text-left small my-0'>${paragraph}</p>`, "") : "Brief Introduction: N/A";
       $page.appendTo("#education-book")
-           .css("z-index", `${educationOverlayZindex - $page.attr("page")}`)
+           .css("z-index", `${educationOverlayZindex - $page.attr("data-page")}`)
            .append(`<div class="education-page-front"></div>
                     <div class="education-page-back d-flex flex-column justify-content-center align-items-center"><img class="education-page-back-img" src="" alt=""></div>`)
            .find(".education-page-front")
            .append(``)
            .append(`<div class="education-page-wrapper bg-container d-flex flex-column align-items-center">
                       <div class="education-page-control-wrapper modal-header w-100 d-flex flex-row align-items-center justify-content-around py-0">
-                        <button type="button" class="modal-previous close" type="button"><span>&#8249;</span></button>
-                        <button type="button" class="modal-next close" type="button"><span>&#8250;</span></button>
+                        <button type="button" class="modal-previous close"><span>&#8249;</span></button>
+                        <button type="button" class="modal-next close"><span>&#8250;</span></button>
                         <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                       </div>
                       <img class="bg-img" src="${education.instituteImg}" alt="${education.instituteImg != null ? education.instituteAbbreviation : null}" />

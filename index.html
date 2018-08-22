@@ -49,7 +49,7 @@
           </div>
           <div class="row mt-2 mt-md-5 text-white d-flex flex-row justify-content-around">
             <a id="btn-view-more" class="btn btn-icon btn-view-more btn-primary btn-lg reveal-left ripple mt-auto d-block col-md mb-4 mb-md-0 mr-md-4 btn-outline-info" href="#section-education" role="button"><p class="d-block">View More</p></a>
-            <a id="btn-download-resume" class="btn btn-icon btn-download btn-primary btn-lg reveal-right ripple mt-auto d-block col-md ml-md-4 btn-outline-info" href="doc/Can Pu.pdf" download><p class="d-block">Download Resume</p></a>
+            <a id="btn-download-resume" class="btn btn-icon btn-download btn-primary btn-lg reveal-right ripple mt-auto d-block col-md ml-md-4 btn-outline-info" href="doc/can-pu.pdf" download><p class="d-block">Download Resume</p></a>
           </div>
         </div>
       </div>
@@ -111,11 +111,11 @@
                 </div>
                 <div class="message-row row reveal-bottom">
                   <label class="mb-1" for="messager-message">Message: </label>
-                  <textarea class="input w-100" name="message" id="message-message" placeholder="Enter your message here" required></textarea>
+                  <textarea class="input w-100" name="message" id="messager-message" placeholder="Enter your message here" required></textarea>
                 </div>
                 <div class="message-row d-flex flex-row justify-content-around align-items-center mt-2 reveal-bottom">
                   <button id="btn-send" type="submit" class="btn btn-info ripple">Send</button>
-                  <button id="btn-send" type="reset" class="btn btn-info ripple">Reset</button>
+                  <button id="btn-reset" type="reset" class="btn btn-info ripple">Reset</button>
                 </div>
               </form>
             </div>
@@ -133,7 +133,7 @@
               </div>
               <div class="social-container d-flex flex-row justify-content-around align-items-center mt-4 flex-wrap">
                 <a class="social-icon-container reveal-bottom m-3" title="Gmail" href="mailto:pucanmail@gmail.com" target="_blank">
-                  <svg id="icon-gmail" class="social-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
+                  <svg id="icon-gmail" class="social-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
                     <circle class="outer-shape" cx="256" cy="256" r="256"></circle>
                   	<path class="inner-shape" transform="scale(0.68) translate(120, 120)" d="M462.275,55.689c-0.085-0.001-0.162-0.026-0.247-0.026c-0.039,0-0.076-0.011-0.115-0.011H50.087    c-0.034,0-0.066,0.01-0.1,0.01c-0.073,0-0.143,0.021-0.217,0.022C22.3,55.859,0,78.228,0,105.739v300.522    c0,27.619,22.468,50.087,50.087,50.087h411.826c27.619,0,50.087-22.468,50.087-50.087V105.739    C512,78.244,489.725,55.888,462.275,55.689z M411.826,422.957H100.174V240.652l120.413,120.414    c9.761,9.761,22.587,14.652,35.413,14.652c12.826,0,25.652-4.892,35.413-14.652l120.414-120.414V422.957z M256,254.805    L90.239,89.043h331.54L256,254.805z" />
                   </svg>
@@ -182,24 +182,24 @@
       </section>
     </main>
     <footer class="main-footer d-flex flex-column justify-content-center align-items-center p-5 m-0 w-100">
-      <p class="copyright lead text-center">Copyright &copy; <copyright>Can Pu</copyright> &middot 2018</p>
+      <p class="copyright lead text-center">Copyright &copy; Can Pu &middot; 2018</p>
       <div class="citation small text-center">Icons made by <a class="text-g" href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </footer>
     <div id="modal-education" class="modal fade w-100" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div id="education-book" class="modal-content">
-          <div id="education-book-cover" class="education-page w-100 h-100" page="0">
+          <div id="education-book-cover" class="education-page w-100 h-100" data-page="0">
             <div class="education-page-front bg-container d-flex flex-column align-items-center justify-content-center">
               <div class="education-page-control-wrapper modal-header w-100 d-flex flex-row align-items-center justify-content-around py-0">
-                <button type="button" class="modal-previous close" type="button"><span>&#8249;</span></button>
-                <button type="button" class="modal-next close" type="button"><span>&#8250;</span></button>
+                <button type="button" class="modal-previous close"><span>&#8249;</span></button>
+                <button type="button" class="modal-next close"><span>&#8250;</span></button>
                 <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               </div>
               <img class="bg-img" src="images/institutes/university.jpg" alt="university">
               <h3 class="education-book-heading text-center my-auto">Education Experiences</h3>
             </div>
             <div class="education-page-back d-flex flex-column justify-content-center align-items-center">
-              <img class="education-page-back-img" src="" alt="">
+              <img class="education-page-back-img" src="..." alt="...">
             </div>
           </div>
         </div>
@@ -224,8 +224,6 @@
         </div>
       </div>
     </div>
-
-</div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
