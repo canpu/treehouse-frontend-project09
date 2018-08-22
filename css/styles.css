@@ -1537,7 +1537,7 @@
 
 /* line 68, F:/Github/treehouse-frontend-project09/scss/components/_contact.scss */
 .text-grey {
-  color: #cccccc;
+  color: #cccccc !important;
 }
 
 /* line 75, F:/Github/treehouse-frontend-project09/scss/components/_contact.scss */
