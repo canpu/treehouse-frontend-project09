@@ -507,7 +507,7 @@
   #education-canvas .education-1 {
     top: 0px;
     left: auto;
-    right: calc(50% - 65px);
+    right: calc(50% + 65px);
   }
   /* line 110, F:/Github/treehouse-frontend-project09/scss/components/_education.scss */
   #education-canvas .education-1::before {
@@ -545,7 +545,7 @@
   #education-canvas .education-3 {
     top: 200px;
     left: auto;
-    right: calc(50% - 65px);
+    right: calc(50% + 65px);
   }
   /* line 110, F:/Github/treehouse-frontend-project09/scss/components/_education.scss */
   #education-canvas .education-3::before {
@@ -583,7 +583,7 @@
   #education-canvas .education-5 {
     top: 400px;
     left: auto;
-    right: calc(50% - 65px);
+    right: calc(50% + 65px);
   }
   /* line 110, F:/Github/treehouse-frontend-project09/scss/components/_education.scss */
   #education-canvas .education-5::before {
@@ -621,7 +621,7 @@
   #education-canvas .education-7 {
     top: 600px;
     left: auto;
-    right: calc(50% - 65px);
+    right: calc(50% + 65px);
   }
   /* line 110, F:/Github/treehouse-frontend-project09/scss/components/_education.scss */
   #education-canvas .education-7::before {
@@ -659,7 +659,7 @@
   #education-canvas .education-9 {
     top: 800px;
     left: auto;
-    right: calc(50% - 65px);
+    right: calc(50% + 65px);
   }
   /* line 110, F:/Github/treehouse-frontend-project09/scss/components/_education.scss */
   #education-canvas .education-9::before {
@@ -697,7 +697,7 @@
   #education-canvas .education-11 {
     top: 1000px;
     left: auto;
-    right: calc(50% - 65px);
+    right: calc(50% + 65px);
   }
   /* line 110, F:/Github/treehouse-frontend-project09/scss/components/_education.scss */
   #education-canvas .education-11::before {
@@ -735,7 +735,7 @@
   #education-canvas .education-13 {
     top: 1200px;
     left: auto;
-    right: calc(50% - 65px);
+    right: calc(50% + 65px);
   }
   /* line 110, F:/Github/treehouse-frontend-project09/scss/components/_education.scss */
   #education-canvas .education-13::before {
@@ -773,7 +773,7 @@
   #education-canvas .education-15 {
     top: 1400px;
     left: auto;
-    right: calc(50% - 65px);
+    right: calc(50% + 65px);
   }
   /* line 110, F:/Github/treehouse-frontend-project09/scss/components/_education.scss */
   #education-canvas .education-15::before {
@@ -811,7 +811,7 @@
   #education-canvas .education-17 {
     top: 1600px;
     left: auto;
-    right: calc(50% - 65px);
+    right: calc(50% + 65px);
   }
   /* line 110, F:/Github/treehouse-frontend-project09/scss/components/_education.scss */
   #education-canvas .education-17::before {
@@ -849,7 +849,7 @@
   #education-canvas .education-19 {
     top: 1800px;
     left: auto;
-    right: calc(50% - 65px);
+    right: calc(50% + 65px);
   }
   /* line 110, F:/Github/treehouse-frontend-project09/scss/components/_education.scss */
   #education-canvas .education-19::before {
@@ -887,7 +887,7 @@
   #education-canvas .education-21 {
     top: 2000px;
     left: auto;
-    right: calc(50% - 65px);
+    right: calc(50% + 65px);
   }
   /* line 110, F:/Github/treehouse-frontend-project09/scss/components/_education.scss */
   #education-canvas .education-21::before {
@@ -925,7 +925,7 @@
   #education-canvas .education-23 {
     top: 2200px;
     left: auto;
-    right: calc(50% - 65px);
+    right: calc(50% + 65px);
   }
   /* line 110, F:/Github/treehouse-frontend-project09/scss/components/_education.scss */
   #education-canvas .education-23::before {
@@ -963,7 +963,7 @@
   #education-canvas .education-25 {
     top: 2400px;
     left: auto;
-    right: calc(50% - 65px);
+    right: calc(50% + 65px);
   }
   /* line 110, F:/Github/treehouse-frontend-project09/scss/components/_education.scss */
   #education-canvas .education-25::before {

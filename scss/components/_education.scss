@@ -106,7 +106,7 @@
         }
         @else {
           left: auto;
-          right: calc(50% - #{$length-education-assoc-line});
+          right: calc(50% + #{$length-education-assoc-line});
           &::before {
             left: auto;
             right: - $length-education-assoc-line - $radius-education-axis;
