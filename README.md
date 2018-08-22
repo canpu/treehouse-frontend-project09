@@ -9,7 +9,7 @@ TreeHouse FrontEnd Project 9 - Capstone Portfolio
 * Education experiences are aligned along a tree.
 * Clicking education experience will open a book-shaped modal window, and the user can turn pages through the different educational programs using buttons or keyboards.
 * The acquaintance of skills is shown by the length of bars. Skill bars will start growing once revealed.
-
+* Viewer can send me emails in the contact section.
 
 ## Techniques Involed
 
@@ -20,7 +20,9 @@ TreeHouse FrontEnd Project 9 - Capstone Portfolio
 * jQuery
 * JSON
 * AJAX
+* Bootstrap
 
 ## External Plugins
 
 * [ScrollReveal](https://scrollrevealjs.org/)
+* [Formspree](https://formspree.io/)
