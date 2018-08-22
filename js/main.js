@@ -15,7 +15,7 @@ const degreeLevelAbbrev = {"doctoral": "D",
                            "master": "M",
                            "bachelor": "B",
                            "professional": "P"};
-const host = "https://github.com/canpu/treehouse-frontend-project09";
+const host = "https://canpu.github.io/treehouse-frontend-project09";
 const educationCardOpacity = 0.15;
 const educationCardOpacityHover = 0.75;
 const educationOverlayZindex = 1050;
