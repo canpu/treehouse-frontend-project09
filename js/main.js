@@ -494,4 +494,6 @@ ScrollReveal(revealFromRightSetting).reveal(".reveal-right");
 ScrollReveal(revealFromBottomSetting).reveal(".reveal-bottom");
 
 /* Force Window to Go to Top After Refreshing */
-$(document).ready(() => $(window).scrollTop(0));
+$(window).on('beforeunload', function(){
+  $(window).scrollTop(0);
+});
