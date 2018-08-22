@@ -350,7 +350,7 @@
 
 /* line 10, F:/Github/treehouse-frontend-project09/scss/components/_jumbotron.scss */
 #section-welcome .bg-img {
-  filter: opacity(0.05);
+  opacity: 0.05;
 }
 
 /* line 13, F:/Github/treehouse-frontend-project09/scss/components/_jumbotron.scss */
