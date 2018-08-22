@@ -1,0 +1,185 @@
+{
+  "projects": [
+    {
+      "title": "Personal Profile Page",
+      "subtitle": "TreeHouse Front End Project 1",
+      "url": "https://canpu.github.io/treehouse-frontend-project01/",
+      "github": "https://github.com/canpu/treehouse-frontend-project01",
+      "tags": ["TreeHouse", "Front End", "Web Development", "Public"],
+      "date": "2018-06-12",
+      "primaryImage": "images/projects/treehouse-frontend-project01.gif",
+      "secondaryImage": "images/projects/treehouse-frontend-project01.png",
+      "techniques": ["HTML", "CSS", "JavaScript", "jQuery"],
+      "externals": [],
+      "brief": [
+        "This is a personal website with 3 pages."
+      ]
+    },
+    {
+      "title": "Mobile First Responsive Layout",
+      "subtitle": "TreeHouse Front End Project 2",
+      "url": "https://canpu.github.io/treehouse-frontend-project02/",
+      "github": "https://github.com/canpu/treehouse-frontend-project02",
+      "tags": ["TreeHouse", "Front End", "Web Development", "Public"],
+      "date": "2018-06-19",
+      "primaryImage": "images/projects/treehouse-frontend-project02.gif",
+      "secondaryImage": "images/projects/treehouse-frontend-project02.png",
+      "techniques": ["HTML", "CSS"],
+      "externals": [],
+      "brief": [
+        "The webpage has adopted a mobile first responsive design.",
+        "The layout is made by CSS floats."
+      ]
+    },
+    {
+      "title": "Online Registration Form",
+      "subtitle": "TreeHouse Front End Project 3",
+      "url": "https://canpu.github.io/treehouse-frontend-project03/",
+      "github": "https://github.com/canpu/treehouse-frontend-project03",
+      "tags": ["TreeHouse", "Front End", "Web Development", "Public"],
+      "date": "2018-06-26",
+      "primaryImage": "images/projects/treehouse-frontend-project03.gif",
+      "secondaryImage": "images/projects/treehouse-frontend-project03.png",
+      "techniques": ["HTML", "CSS", "JavaScript", "jQuery"],
+      "externals": [],
+      "brief": [
+        "This webpage is an registration form designed in a mobile first responsive approach.",
+        "The first part of the registration form is contact information, including name, email, phone and address. The second part is newsletter subscription. The user can choose whether or not to receive HTML, CSS and JavaScript news, and can choose to receive HTML formatted or plain text news. The user can enter unlisted interesting topics in the text area.",
+        "Elements fade in when scrolled into the window."
+      ]
+    },
+    {
+      "title": "Web Style Guideline",
+      "subtitle": "TreeHouse Front End Project 4",
+      "url": "https://canpu.github.io/treehouse-frontend-project04/",
+      "github": "https://github.com/canpu/treehouse-frontend-project04",
+      "tags": ["TreeHouse", "Front End", "Web Development", "Public"],
+      "date": "2018-07-03",
+      "primaryImage": "images/projects/treehouse-frontend-project04.gif",
+      "secondaryImage": "images/projects/treehouse-frontend-project04.png",
+      "techniques": ["HTML", "CSS", "Sass"],
+      "externals": [],
+      "brief": [
+        "The webpage is an style guide page. The page follows mobile first responsive design, but one breakpoint is very large (1400 pixels)",
+        "The page demonstrates differences in typography, buttons, forms, images and grid. The grid system section highlights the widths of different grid classes. They all collapse to an entire row when the viewport width is smaller than 1400 pixels."
+      ]
+    },
+    {
+      "title": "Interactive Photo Gallery",
+      "subtitle": "TreeHouse Front End Project 5",
+      "url": "https://canpu.github.io/treehouse-frontend-project05/",
+      "github": "https://github.com/canpu/treehouse-frontend-project05",
+      "tags": ["TreeHouse", "Front End", "Web Development", "Public"],
+      "date": "2018-07-08",
+      "primaryImage": "images/projects/treehouse-frontend-project05.gif",
+      "secondaryImage": "images/projects/treehouse-frontend-project05.png",
+      "techniques": ["HTML", "CSS", "Sass", "JavaScript", "jQuery"],
+      "externals": [{
+          "name": "simplelightbox",
+          "author": "Damir Brekalo",
+          "url": "http://dbrekalo.github.io/simpleLightbox/"
+        }
+      ],
+      "brief": [
+        "The webpage is an interactive photo gallery with mobile first responsive design.",
+        "There are 12 photos embedded on the wall. Hovering over a photo, its title is revealed. Clicking any photo would lead you to a lightbox, in which a magnified version is shown for the corresponding photo.",
+        "One can navigate through all photos in the lightbox via the previous and next button (or via the keyboard)."
+      ]
+    },
+    {
+      "title": "Game App Show",
+      "subtitle": "TreeHouse Front End Project 6",
+      "url": "https://canpu.github.io/treehouse-frontend-project06/",
+      "github": "https://github.com/canpu/treehouse-frontend-project06",
+      "tags": ["TreeHouse", "Front End", "Web Development", "Public"],
+      "date": "2018-07-17",
+      "primaryImage": "images/projects/treehouse-frontend-project06.gif",
+      "secondaryImage": "images/projects/treehouse-frontend-project06.png",
+      "techniques": ["HTML", "CSS", "JavaScript"],
+      "externals": [],
+      "brief": [
+        "This webpage is a game named Wheel of Success. Responsive design is not adopted and the game only works on desktops. The objective of the game is to find all letters present in a sentence.",
+        "At the very beginning, the user does not know any letters of the sentence, but knows how many words are there and how many letters each word contains.",
+        "The user guesses a letter by clicking the soft keyboard. If the guess is correct, the letter will be revealed in the sentence; if not, the player loses a life.",
+        "A player has five lives and has to find all letters before using them up."
+      ]
+    },
+    {
+      "title": "WebApp Dashboard",
+      "subtitle": "TreeHouse Front End Project 7",
+      "url": "https://canpu.github.io/treehouse-frontend-project07/",
+      "github": "https://github.com/canpu/treehouse-frontend-project07",
+      "tags": ["TreeHouse", "Front End", "Web Development", "Public"],
+      "date": "2018-08-08",
+      "primaryImage": "images/projects/treehouse-frontend-project07.gif",
+      "secondaryImage": "images/projects/treehouse-frontend-project07.png",
+      "techniques": ["HTML", "CSS", "Sass", "JavaScript", "jQuery", "local storage"],
+      "externals": [{
+          "name": "chart.js",
+          "author": null,
+          "url": "http://www.chartjs.org/"
+        }
+      ],
+      "brief": [
+        "This project is on the dashboard of an imaginary app <i>YourApp</i>. The page layout is made by CSS grid and a mobile first responsive design is adopted.",
+        "The user can view unread messages by clicking the bell on the top, whose dot turns from red to green after messages are dismissed",
+        "The user can view the statistics of traffic with selected scale (hourly, daily, weekly or monthly). By clicking the legend of the donut chart, the portion of the clicked item can be hidden. The charts are made by <i>chart.js</i>.",
+        "The searchbox in the message widget can autocomplete user names. We have assumed that all users are displayed in the new members widget.",
+        "In the settings widget, the user can save the settings in local storage by clicking save, so the settings will be retrieved each time the page is opened, as long as the cache is not cleared."
+      ]
+    },
+    {
+      "title": "Employee Directory",
+      "subtitle": "TreeHouse Front End Project 8",
+      "url": "https://canpu.github.io/treehouse-frontend-project08/",
+      "github": "https://github.com/canpu/treehouse-frontend-project08",
+      "tags": ["TreeHouse", "Front End", "Web Development", "Public"],
+      "date": "2018-08-11",
+      "primaryImage": "images/projects/treehouse-frontend-project08.gif",
+      "secondaryImage": "images/projects/treehouse-frontend-project08.png",
+      "techniques": ["HTML", "CSS", "Sass", "JavaScript", "jQuery", "AJAX"],
+      "externals": [{
+          "name": "Random User Generator",
+          "author": "Gabriella Hansen",
+          "url": "https://randomuser.me/"
+        }
+      ],
+      "brief": [
+        "This webpage display an imaginary list of employees. The layout is made by CSS grid.",
+        "Employees are generated by an external API <i>Random User Generator</i>. Data is retrieved using AJAX and displayed in the main window.",
+        "Clicking an employee will open an modal window with more detailed information. In the modal window, the user can navigate through all employees using both the buttons and keyboards.",
+        "The user can filter employees by their names in the searchbox."
+      ]
+    },
+    {
+      "title": "Capstone Portfolio",
+      "subtitle": "TreeHouse Front End Project 9",
+      "url": "https://canpu.github.io/treehouse-frontend-project09/",
+      "github": "https://github.com/canpu/treehouse-frontend-project09",
+      "tags": ["TreeHouse", "Front End", "Web Development", "Public"],
+      "date": "2018-08-21",
+      "primaryImage": "images/projects/treehouse-frontend-project09.gif",
+      "secondaryImage": "images/projects/treehouse-frontend-project09.png",
+      "techniques": ["HTML", "CSS", "Sass", "JavaScript", "jQuery", "JSON", "AJAX", "Bootstrap"],
+      "externals": [{
+          "name": "ScrollReveal",
+          "author": null,
+          "url": "https://scrollrevealjs.org/"
+        },
+        {
+          "name": "Formspree",
+          "author": null,
+          "url": "https://formspree.io/"
+        }
+      ],
+      "brief": [
+        "The webpage is a personal portfolio. The layout is made using Bootstrap.",
+        "Using external plugins, elements are revealed when scrolled into the window.",
+        "Education experiences are aligned along a tree; clicking education experience will open a book-shaped modal window, and the user can turn pages through the different educational programs using buttons or keyboards",
+        "The acquaintance of skills is shown by the length of bars. Skill bars will start growing once revealed",
+        "Clikcing a project will bring the user to a carousel in which the user can navigate through all projects with more detailed information.",
+        "Viewer can send me emails in the contact section through <a class='text-grey' href='https://formspree.io/'>Formspree</a>."
+      ]
+    }
+  ]
+}

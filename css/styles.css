@@ -2,13 +2,19 @@
 /* Colors */
 /* Navbar */
 /* Transition */
+/* Images */
+/* Sections */
 /* Jumbotron */
-/* Fade-In Effect */
-/* Math Constants */
+/* Education */
+/* Skills */
+/* Portfolio */
+/* Contact */
+/* Modal */
+/* Icons */
+/* Footer */
 /* Layout */
 /* Media Query */
-/* BEM */
-/* line 1, F:/Github/treehouse-frontend-project09/scss/utilities/_texts.scss */
+/* line 1, D:/MAMP/testsites/personal-website/scss/utilities/_texts.scss */
 .text-nonselectable {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -19,44 +25,44 @@
 }
 
 /* Navbar Animation */
-/* line 3, F:/Github/treehouse-frontend-project09/scss/utilities/_animations.scss */
+/* line 3, D:/MAMP/testsites/personal-website/scss/utilities/_animations.scss */
 .navbar-bg-primary {
   background-color: #563d7c;
 }
 
-/* line 6, F:/Github/treehouse-frontend-project09/scss/utilities/_animations.scss */
+/* line 6, D:/MAMP/testsites/personal-website/scss/utilities/_animations.scss */
 .navbar-bg-secondary {
-  background-color: rgba(86, 61, 124, 0.1);
+  background-color: rgba(86, 61, 124, 0.25);
 }
 
-/* line 9, F:/Github/treehouse-frontend-project09/scss/utilities/_animations.scss */
+/* line 9, D:/MAMP/testsites/personal-website/scss/utilities/_animations.scss */
 .navbar-min-height-primary {
   min-height: 50px !important;
 }
 
-/* line 12, F:/Github/treehouse-frontend-project09/scss/utilities/_animations.scss */
+/* line 12, D:/MAMP/testsites/personal-website/scss/utilities/_animations.scss */
 .navbar-min-height-secondary {
   min-height: 40px !important;
 }
 
-/* line 15, F:/Github/treehouse-frontend-project09/scss/utilities/_animations.scss */
+/* line 15, D:/MAMP/testsites/personal-website/scss/utilities/_animations.scss */
 .navbar-height-primary {
   height: 50px !important;
 }
 
-/* line 18, F:/Github/treehouse-frontend-project09/scss/utilities/_animations.scss */
+/* line 18, D:/MAMP/testsites/personal-website/scss/utilities/_animations.scss */
 .navbar-height-secondary {
   height: 40px !important;
 }
 
 /* Ripple Effect */
-/* line 24, F:/Github/treehouse-frontend-project09/scss/utilities/_animations.scss */
+/* line 24, D:/MAMP/testsites/personal-website/scss/utilities/_animations.scss */
 .ripple {
   position: relative;
   overflow: hidden;
 }
 
-/* line 27, F:/Github/treehouse-frontend-project09/scss/utilities/_animations.scss */
+/* line 27, D:/MAMP/testsites/personal-website/scss/utilities/_animations.scss */
 .ripple-wave {
   display: block;
   background: rgba(50, 50, 50, 0.5);
@@ -72,28 +78,46 @@
   pointer-events: none;
 }
 
-/* line 1, F:/Github/treehouse-frontend-project09/scss/components/_typography.scss */
+/* Rotation */
+@keyframes linearRotation {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+/* line 1, D:/MAMP/testsites/personal-website/scss/components/_typography.scss */
 * {
   font-family: "Roboto Slab", "Roboto", georgia;
 }
 
-/* line 5, F:/Github/treehouse-frontend-project09/scss/components/_typography.scss */
+/* line 5, D:/MAMP/testsites/personal-website/scss/components/_typography.scss */
 .navbar-brand {
   font-family: "Tangerine", "Roboto", georgia;
   font-size: 2rem;
 }
 
-/* line 10, F:/Github/treehouse-frontend-project09/scss/components/_typography.scss */
+/* line 10, D:/MAMP/testsites/personal-website/scss/components/_typography.scss */
 #section-welcome h1 {
   font-family: "Merriweather", "Roboto", georgia;
 }
 
-/* line 14, F:/Github/treehouse-frontend-project09/scss/components/_typography.scss */
+/* line 14, D:/MAMP/testsites/personal-website/scss/components/_typography.scss */
 .short-introduction {
   color: lightgrey;
 }
 
-/* line 1, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+/* line 18, D:/MAMP/testsites/personal-website/scss/components/_typography.scss */
+.section-heading {
+  color: white;
+}
+
+/* line 1, D:/MAMP/testsites/personal-website/scss/components/_navigation.scss */
 .navbar {
   transition-property: background-color, min-height, height;
   transition-duration: 0.25s;
@@ -101,7 +125,7 @@
   justify-content: flex-end;
 }
 
-/* line 6, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+/* line 6, D:/MAMP/testsites/personal-website/scss/components/_navigation.scss */
 .navbar-container {
   transition-property: height;
   transition-duration: 0.25s;
@@ -114,104 +138,108 @@
 }
 
 @media (min-width: 768px) {
-  /* line 6, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+  /* line 6, D:/MAMP/testsites/personal-website/scss/components/_navigation.scss */
   .navbar-container {
     width: auto;
     justify-content: space-between;
   }
 }
 
-/* line 17, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+/* line 17, D:/MAMP/testsites/personal-website/scss/components/_navigation.scss */
 .navbar-brand {
   transition: margin 0.25s linear;
   height: 40px;
 }
 
-/* line 21, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+/* line 21, D:/MAMP/testsites/personal-website/scss/components/_navigation.scss */
 .navbar-list-wrapper {
   justify-content: flex-end;
   overflow: hidden !important;
   transition: height 0.25s linear;
 }
 
-/* line 26, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+/* line 26, D:/MAMP/testsites/personal-website/scss/components/_navigation.scss */
 .navbar-toggler {
   transition: margin 0.25s linear;
   height: 32px;
 }
 
-/* line 29, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+/* line 29, D:/MAMP/testsites/personal-website/scss/components/_navigation.scss */
 .navbar-toggler:focus {
   outline: none;
-  box-shadow: 0 0 3px 3px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 3px 3px rgba(136, 77, 255, 0.075);
 }
 
-/* line 33, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+/* line 33, D:/MAMP/testsites/personal-website/scss/components/_navigation.scss */
 .navbar-toggler-icon {
   height: 90%;
 }
 
-/* line 37, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+/* line 37, D:/MAMP/testsites/personal-website/scss/components/_navigation.scss */
 .navbar .active {
   border-radius: 0;
 }
 
-/* line 42, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+/* line 42, D:/MAMP/testsites/personal-website/scss/components/_navigation.scss */
 .nav-link {
   transition-property: color, background-color, height;
-  transition-duration: 0.25s;
+  transition-duration: 0.5s;
   transition-timing-function: linear;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  border-radius: 0 !important;
 }
 
-/* line 49, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+/* line 50, D:/MAMP/testsites/personal-website/scss/components/_navigation.scss */
 .nav-link:focus, .nav-link:hover {
   outline: none;
   color: white !important;
 }
 
-/* line 53, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+/* line 54, D:/MAMP/testsites/personal-website/scss/components/_navigation.scss */
 .nav-link:hover {
-  background-color: rgba(0, 98, 204, 0.75) !important;
+  background-color: #661aff !important;
 }
 
-/* line 58, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+/* line 59, D:/MAMP/testsites/personal-website/scss/components/_navigation.scss */
 .nav-item {
   transition-property: height;
   transition-duration: 0.25s;
   transition-timing-function: linear;
+  border-radius: 0;
 }
 
-/* line 64, F:/Github/treehouse-frontend-project09/scss/components/_navigation.scss */
+/* line 66, D:/MAMP/testsites/personal-website/scss/components/_navigation.scss */
 .active {
-  background-color: rgba(0, 86, 179, 0.75) !important;
+  background-color: #5501ff !important;
   color: white !important;
 }
 
-/* line 1, F:/Github/treehouse-frontend-project09/scss/components/_buttons.scss */
+/* line 1, D:/MAMP/testsites/personal-website/scss/components/_buttons.scss */
 .btn-outline-info {
   color: rgba(255, 255, 255, 0.65);
 }
 
-/* line 3, F:/Github/treehouse-frontend-project09/scss/components/_buttons.scss */
+/* line 3, D:/MAMP/testsites/personal-website/scss/components/_buttons.scss */
 .btn-outline-info:hover {
   color: white;
 }
 
-/* line 8, F:/Github/treehouse-frontend-project09/scss/components/_buttons.scss */
+/* line 8, D:/MAMP/testsites/personal-website/scss/components/_buttons.scss */
 .btn-icon {
   overflow: hidden;
   position: relative;
   height: 50px;
+  line-height: 50px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 30px 30px;
-  transition: background-position 0.5s linear;
+  transition: background-position 0.25s linear;
+  padding: 0;
 }
 
-/* line 16, F:/Github/treehouse-frontend-project09/scss/components/_buttons.scss */
+/* line 18, D:/MAMP/testsites/personal-website/scss/components/_buttons.scss */
 .btn-icon p {
   left: 0;
   right: 0;
@@ -220,47 +248,1462 @@
   top: 10px;
   transform: translateY(-50px);
   transition-property: transform;
-  transition-duration: 0.5s;
+  transition-duration: 0.25s;
   transition-timing-function: linear;
 }
 
-/* line 27, F:/Github/treehouse-frontend-project09/scss/components/_buttons.scss */
+/* line 29, D:/MAMP/testsites/personal-website/scss/components/_buttons.scss */
 .btn-icon:hover {
   background-position: center top 50px;
 }
 
-/* line 29, F:/Github/treehouse-frontend-project09/scss/components/_buttons.scss */
+/* line 31, D:/MAMP/testsites/personal-website/scss/components/_buttons.scss */
 .btn-icon:hover p {
   transform: translateY(0);
 }
 
-/* line 35, F:/Github/treehouse-frontend-project09/scss/components/_buttons.scss */
-#btn-download-resume {
-  background-image: url("../images/download.svg");
+/* line 37, D:/MAMP/testsites/personal-website/scss/components/_buttons.scss */
+.btn-download {
+  background-image: url("../images/icons/download.svg");
 }
 
-/* line 39, F:/Github/treehouse-frontend-project09/scss/components/_buttons.scss */
-#btn-view-more {
-  background-image: url("../images/eye.svg");
+/* line 41, D:/MAMP/testsites/personal-website/scss/components/_buttons.scss */
+.btn-view-more {
+  background-image: url("../images/icons/eye.svg");
 }
 
-/* line 1, F:/Github/treehouse-frontend-project09/scss/components/_sections.scss */
+/* line 45, D:/MAMP/testsites/personal-website/scss/components/_buttons.scss */
+.btn-code {
+  background-image: url("../images/icons/code.svg");
+}
+
+/* line 1, D:/MAMP/testsites/personal-website/scss/components/_images.scss */
+.section-icon {
+  width: 35px;
+  height: 35px;
+}
+
+/* line 7, D:/MAMP/testsites/personal-website/scss/components/_images.scss */
+.bg-img {
+  position: absolute;
+}
+
+/* line 10, D:/MAMP/testsites/personal-website/scss/components/_images.scss */
+.bg-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 1, D:/MAMP/testsites/personal-website/scss/components/_sections.scss */
+.section {
+  align-items: center;
+}
+
+/* line 3, D:/MAMP/testsites/personal-website/scss/components/_sections.scss */
+.section-header {
+  align-items: center;
+  width: 235px;
+  padding: 0;
+  z-index: 1;
+}
+
+/* line 9, D:/MAMP/testsites/personal-website/scss/components/_sections.scss */
+.section > .bg-img {
+  opacity: 0.1;
+  min-width: 100%;
+  height: 100%;
+}
+
+/* line 17, D:/MAMP/testsites/personal-website/scss/components/_sections.scss */
+.section {
+  min-height: 60vh;
+  transition: padding 0.25s linear;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  /* line 17, D:/MAMP/testsites/personal-website/scss/components/_sections.scss */
+  .section {
+    padding: 100px 50px;
+  }
+}
+
+/* line 24, D:/MAMP/testsites/personal-website/scss/components/_sections.scss */
+.section-wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* line 1, D:/MAMP/testsites/personal-website/scss/components/_jumbotron.scss */
 #section-welcome {
   min-height: 100vh;
-  background-color: #4c69b1;
+  background-color: #5c5cd6;
   border-radius: 0;
   margin-bottom: 0;
 }
 
-/* line 6, F:/Github/treehouse-frontend-project09/scss/components/_sections.scss */
+/* line 6, D:/MAMP/testsites/personal-website/scss/components/_jumbotron.scss */
 #section-welcome .icon {
   max-width: 200px;
   max-height: 200px;
 }
 
-/* line 12, F:/Github/treehouse-frontend-project09/scss/components/_sections.scss */
+/* line 10, D:/MAMP/testsites/personal-website/scss/components/_jumbotron.scss */
+#section-welcome .bg-img {
+  filter: opacity(0.05);
+}
+
+/* line 13, D:/MAMP/testsites/personal-website/scss/components/_jumbotron.scss */
+#section-welcome .btn {
+  max-width: 300px;
+}
+
+/* line 1, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
 #section-education {
-  background-color: #928cc0;
+  background-color: #a19cc9;
+}
+
+/* line 5, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas {
+  position: relative;
+  overflow: visible;
+  width: 95%;
+  margin-top: 70px;
+}
+
+@media (min-width: 768px) {
+  /* line 5, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas {
+    width: 485px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 5, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas {
+    width: 930px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 18, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas #education-axis {
+    content: "";
+    position: absolute;
+    height: attr(axis-length);
+    width: 0;
+    box-shadow: 0 0 0 2.5px #a64dff;
+    left: 0;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 992px) {
+  /* line 18, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas #education-axis {
+    left: 50%;
+  }
+}
+
+/* line 31, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-card {
+  padding: 10px;
+  position: absolute;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 97.5%;
+  height: 150px;
+  box-shadow: 0 -5px 0 #a64dff;
+  left: calc(50% - 48.75%);
+  cursor: pointer;
+  transition-property: box-shadow, background-color, opacity;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+}
+
+@media (min-width: 576px) {
+  /* line 31, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-card {
+    width: 60%;
+    left: calc(50% - 30%);
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 31, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-card {
+    box-shadow: none;
+    width: 400px;
+    left: 65px;
+  }
+  /* line 52, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-card::before {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #a64dff;
+    background-color: #7300e6;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    content: attr(level);
+    position: absolute;
+    margin: 0 !important;
+    left: 0;
+    z-index: 2;
+    top: -20px;
+    left: -85px;
+  }
+  /* line 70, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-card::after {
+    content: "";
+    position: absolute;
+    width: 462.5px;
+    height: 0;
+    left: -65px;
+    box-shadow: 0 0 0 2.5px #a64dff;
+    z-index: 1;
+    top: 0;
+  }
+}
+
+/* line 81, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-card-overlay {
+  position: absolute;
+  overflow: hidden !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.15s linear;
+}
+
+/* line 91, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-card:hover .education-card-overlay {
+  height: 100%;
+}
+
+/* line 94, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-card-view-btn {
+  width: 50px;
+  height: 50px;
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-1 {
+  top: 0px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-1 {
+    top: 0px;
+    left: auto;
+    right: calc(50% - $length-education-assoc-line);
+  }
+  /* line 111, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-1::before {
+    left: auto;
+    right: -85px;
+  }
+  /* line 115, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-1::after {
+    left: auto;
+    right: -65px;
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-2 {
+  top: 200px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-2 {
+    top: 100px;
+    right: auto;
+    left: calc(50% + 65px);
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-3 {
+  top: 400px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-3 {
+    top: 200px;
+    left: auto;
+    right: calc(50% - $length-education-assoc-line);
+  }
+  /* line 111, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-3::before {
+    left: auto;
+    right: -85px;
+  }
+  /* line 115, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-3::after {
+    left: auto;
+    right: -65px;
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-4 {
+  top: 600px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-4 {
+    top: 300px;
+    right: auto;
+    left: calc(50% + 65px);
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-5 {
+  top: 800px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-5 {
+    top: 400px;
+    left: auto;
+    right: calc(50% - $length-education-assoc-line);
+  }
+  /* line 111, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-5::before {
+    left: auto;
+    right: -85px;
+  }
+  /* line 115, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-5::after {
+    left: auto;
+    right: -65px;
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-6 {
+  top: 1000px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-6 {
+    top: 500px;
+    right: auto;
+    left: calc(50% + 65px);
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-7 {
+  top: 1200px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-7 {
+    top: 600px;
+    left: auto;
+    right: calc(50% - $length-education-assoc-line);
+  }
+  /* line 111, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-7::before {
+    left: auto;
+    right: -85px;
+  }
+  /* line 115, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-7::after {
+    left: auto;
+    right: -65px;
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-8 {
+  top: 1400px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-8 {
+    top: 700px;
+    right: auto;
+    left: calc(50% + 65px);
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-9 {
+  top: 1600px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-9 {
+    top: 800px;
+    left: auto;
+    right: calc(50% - $length-education-assoc-line);
+  }
+  /* line 111, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-9::before {
+    left: auto;
+    right: -85px;
+  }
+  /* line 115, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-9::after {
+    left: auto;
+    right: -65px;
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-10 {
+  top: 1800px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-10 {
+    top: 900px;
+    right: auto;
+    left: calc(50% + 65px);
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-11 {
+  top: 2000px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-11 {
+    top: 1000px;
+    left: auto;
+    right: calc(50% - $length-education-assoc-line);
+  }
+  /* line 111, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-11::before {
+    left: auto;
+    right: -85px;
+  }
+  /* line 115, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-11::after {
+    left: auto;
+    right: -65px;
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-12 {
+  top: 2200px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-12 {
+    top: 1100px;
+    right: auto;
+    left: calc(50% + 65px);
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-13 {
+  top: 2400px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-13 {
+    top: 1200px;
+    left: auto;
+    right: calc(50% - $length-education-assoc-line);
+  }
+  /* line 111, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-13::before {
+    left: auto;
+    right: -85px;
+  }
+  /* line 115, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-13::after {
+    left: auto;
+    right: -65px;
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-14 {
+  top: 2600px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-14 {
+    top: 1300px;
+    right: auto;
+    left: calc(50% + 65px);
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-15 {
+  top: 2800px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-15 {
+    top: 1400px;
+    left: auto;
+    right: calc(50% - $length-education-assoc-line);
+  }
+  /* line 111, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-15::before {
+    left: auto;
+    right: -85px;
+  }
+  /* line 115, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-15::after {
+    left: auto;
+    right: -65px;
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-16 {
+  top: 3000px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-16 {
+    top: 1500px;
+    right: auto;
+    left: calc(50% + 65px);
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-17 {
+  top: 3200px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-17 {
+    top: 1600px;
+    left: auto;
+    right: calc(50% - $length-education-assoc-line);
+  }
+  /* line 111, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-17::before {
+    left: auto;
+    right: -85px;
+  }
+  /* line 115, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-17::after {
+    left: auto;
+    right: -65px;
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-18 {
+  top: 3400px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-18 {
+    top: 1700px;
+    right: auto;
+    left: calc(50% + 65px);
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-19 {
+  top: 3600px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-19 {
+    top: 1800px;
+    left: auto;
+    right: calc(50% - $length-education-assoc-line);
+  }
+  /* line 111, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-19::before {
+    left: auto;
+    right: -85px;
+  }
+  /* line 115, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-19::after {
+    left: auto;
+    right: -65px;
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-20 {
+  top: 3800px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-20 {
+    top: 1900px;
+    right: auto;
+    left: calc(50% + 65px);
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-21 {
+  top: 4000px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-21 {
+    top: 2000px;
+    left: auto;
+    right: calc(50% - $length-education-assoc-line);
+  }
+  /* line 111, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-21::before {
+    left: auto;
+    right: -85px;
+  }
+  /* line 115, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-21::after {
+    left: auto;
+    right: -65px;
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-22 {
+  top: 4200px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-22 {
+    top: 2100px;
+    right: auto;
+    left: calc(50% + 65px);
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-23 {
+  top: 4400px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-23 {
+    top: 2200px;
+    left: auto;
+    right: calc(50% - $length-education-assoc-line);
+  }
+  /* line 111, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-23::before {
+    left: auto;
+    right: -85px;
+  }
+  /* line 115, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-23::after {
+    left: auto;
+    right: -65px;
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-24 {
+  top: 4600px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-24 {
+    top: 2300px;
+    right: auto;
+    left: calc(50% + 65px);
+  }
+}
+
+/* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-canvas .education-25 {
+  top: 4800px;
+}
+
+@media (min-width: 992px) {
+  /* line 100, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-25 {
+    top: 2400px;
+    left: auto;
+    right: calc(50% - $length-education-assoc-line);
+  }
+  /* line 111, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-25::before {
+    left: auto;
+    right: -85px;
+  }
+  /* line 115, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-canvas .education-25::after {
+    left: auto;
+    right: -65px;
+  }
+}
+
+/* line 126, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#modal-education .bg-img {
+  height: 100% !important;
+  min-height: 100% !important;
+  min-width: 100% !important;
+  opacity: 0.15;
+}
+
+/* line 134, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+.education-page {
+  position: absolute;
+  height: 80vh;
+  transition: transform 0.75s ease-in;
+  transform-origin: 0 0 0;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* line 143, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+.education-page-front {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* line 150, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+.education-page-back {
+  transform-origin: 50% 50% 0;
+  transform: rotateY(180deg);
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* line 158, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+.education-page-back-img {
+  width: 50%;
+  height: 50%;
+}
+
+/* line 163, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+.education-page-wrapper {
+  height: 500px;
+}
+
+@media (min-width: 576px) {
+  /* line 163, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  .education-page-wrapper {
+    height: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 163, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  .education-page-wrapper {
+    height: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 163, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  .education-page-wrapper {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 163, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  .education-page-wrapper {
+    height: 400px;
+  }
+}
+
+/* line 166, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+.education-page-control-wrapper {
+  z-index: 2000;
+  height: 30px;
+}
+
+/* line 170, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+.education-page-back-img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+/* line 177, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+.education-page-flipped {
+  transform: rotateY(-90deg);
+}
+
+/* line 181, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+.z0 {
+  z-index: 0 !important;
+}
+
+/* line 185, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+#education-book {
+  width: 275px;
+  height: 500px;
+  perspective: 800px;
+}
+
+@media (min-width: 576px) {
+  /* line 185, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-book {
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 185, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-book {
+    width: 425px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 185, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-book {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 185, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-book {
+    width: 500px;
+  }
+}
+
+@media (min-width: 576px) {
+  /* line 185, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-book {
+    height: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 185, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-book {
+    height: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 185, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-book {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 185, D:/MAMP/testsites/personal-website/scss/components/_education.scss */
+  #education-book {
+    height: 400px;
+  }
+}
+
+/* line 2, D:/MAMP/testsites/personal-website/scss/components/_modal.scss */
+.modal-nav-icon {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+/* line 1, D:/MAMP/testsites/personal-website/scss/components/_skills.scss */
+#section-skills {
+  background-color: #5c5cd6;
+}
+
+/* line 5, D:/MAMP/testsites/personal-website/scss/components/_skills.scss */
+#section-skills .section-wrapper {
+  padding: 30px;
+}
+
+/* line 10, D:/MAMP/testsites/personal-website/scss/components/_skills.scss */
+.skill-group {
+  background-color: rgba(153, 153, 255, 0.35);
+  border-radius: 10px;
+  box-shadow: 0 0 2px 2px rgba(153, 153, 255, 0.5);
+  transition-property: background-color, transform;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+}
+
+/* line 17, D:/MAMP/testsites/personal-website/scss/components/_skills.scss */
+.skill-group:hover {
+  background-color: rgba(153, 153, 255, 0.85);
+}
+
+/* line 22, D:/MAMP/testsites/personal-website/scss/components/_skills.scss */
+.skill-act-tube {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: rgba(62, 44, 90, 0.75);
+}
+
+/* line 30, D:/MAMP/testsites/personal-website/scss/components/_skills.scss */
+.skill-max-tube {
+  width: 100%;
+  height: 20px;
+  position: relative;
+  background-color: rgba(110, 78, 158, 0.5);
+}
+
+/* line 35, D:/MAMP/testsites/personal-website/scss/components/_skills.scss */
+.skill-max-tube p {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  z-index: 1;
+}
+
+/* line 1, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+#section-portfolio {
+  background-color: #884dff;
+}
+
+/* line 3, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+#section-portfolio > .bg-img {
+  filter: hue-rotate(90deg);
+}
+
+/* line 6, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+#section-portfolio .project-control {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 2px 2px rgba(110, 78, 158, 0.75);
+}
+
+/* line 10, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+#section-portfolio .project-control .project-control-option {
+  border-color: rgba(110, 78, 158, 0.75) !important;
+}
+
+/* line 13, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+#section-portfolio .project-control label {
+  cursor: pointer;
+  line-height: 40px;
+  vertical-align: middle;
+  transition: background-color 0.5s linear;
+  background-color: rgba(136, 106, 181, 0.5);
+}
+
+/* line 20, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+#section-portfolio .project-control input[type*="radio"] {
+  display: none;
+}
+
+/* line 22, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+#section-portfolio .project-control input[type*="radio"]:checked + label {
+  background: red;
+  background-color: rgba(110, 78, 158, 0.95);
+}
+
+/* line 28, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+#section-portfolio .modal-project {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+/* line 35, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+.project-card {
+  position: relative;
+  cursor: pointer;
+  width: 250px;
+  height: 250px;
+  border: 7.5px solid rgba(0, 0, 0, 0.85);
+  border-radius: 5px;
+  box-shadow: 10px 10px 3px 3px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition-property: transform, box-shadow;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+  overflow: hidden;
+}
+
+/* line 48, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+.project-card-slide {
+  position: absolute;
+  top: 140px;
+  background-color: rgba(0, 0, 0, 0.35);
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 25px;
+  transition-property: top, background-color;
+  transition-delay: 0.25s, 0;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+  transition: top 0.25s ease-in 0.15s, background-color 0.25s linear;
+}
+
+/* line 63, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+.project-card-title {
+  text-align: center;
+}
+
+/* line 66, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+.project-card-subtitle {
+  text-align: center;
+}
+
+/* line 69, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+.project-card-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+  transition-property: transform, opacity;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+}
+
+/* line 78, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+.project-card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 15px 15px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* line 81, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+.project-card:hover .project-card-img {
+  transform: scale(1.15);
+  opacity: 0.5;
+}
+
+/* line 85, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+.project-card:hover .project-card-slide {
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+}
+
+/* line 93, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+.project-modal-img {
+  border-radius: 5px;
+  border: 7.5px solid rgba(0, 0, 0, 0.85);
+  width: 250px;
+  height: 250px;
+  width: 100%;
+  box-shadow: 7.5px 7.5px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* line 103, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+#modal-project .carousel, #modal-project .carousel-inner {
+  transition: height 1s ease-out;
+}
+
+/* line 106, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+#modal-project .carousel-item {
+  height: 950px;
+  padding: 45px;
+  background-color: rgba(86, 61, 124, 0.5) !important;
+  transition-property: transform, background-color, color;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+@media (min-width: 576px) {
+  /* line 106, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+  #modal-project .carousel-item {
+    height: 650px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 106, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+  #modal-project .carousel-item {
+    height: 665px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 106, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+  #modal-project .carousel-item {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 106, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+  #modal-project .carousel-item {
+    height: 595px;
+  }
+}
+
+@media (min-width: 576px) {
+  /* line 106, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+  #modal-project .carousel-item {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 106, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+  #modal-project .carousel-item {
+    padding: 70px;
+  }
+}
+
+/* line 120, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+#modal-project .active {
+  background-color: rgba(92, 92, 214, 0.75) !important;
+}
+
+/* line 123, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+#modal-project .tag {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 3px;
+  margin-bottom: 2px;
+}
+
+/* line 128, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+#modal-project .tag:nth-child(even) {
+  background-color: rgba(255, 165, 0, 0.5);
+  border: 2px solid rgba(255, 165, 0, 0.75);
+}
+
+/* line 132, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+#modal-project .tag:nth-child(odd) {
+  background-color: rgba(0, 0, 255, 0.5);
+  border: 2px solid rgba(0, 0, 255, 0.75);
+}
+
+/* line 137, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+#modal-project .carousel-control-prev {
+  position: fixed;
+  left: 0px !important;
+  height: 50px;
+  width: 30px;
+  top: calc(50% - 25px);
+}
+
+/* line 144, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+#modal-project .carousel-control-next {
+  position: fixed;
+  height: 50px;
+  width: 30px;
+  right: 0px !important;
+  top: calc(50% - 25px);
+}
+
+/* line 151, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+#modal-project .btn {
+  width: 45% !important;
+}
+
+/* line 154, D:/MAMP/testsites/personal-website/scss/components/_portfolio.scss */
+#modal-project .close {
+  font-size: 30px;
+  color: white;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 2000;
+}
+
+/* line 1, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#section-contact {
+  background-color: #4b9b9b;
+}
+
+/* line 3, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#section-contact textarea {
+  min-height: 100px;
+}
+
+/* line 6, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#section-contact .input {
+  background-color: rgba(118, 189, 189, 0.4);
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 5px;
+  resize: none;
+  color: white;
+  height: 40px;
+  border: 2px solid rgba(50, 103, 103, 0.75);
+  background-repeat: no-repeat;
+  background-position: 7px center;
+  background-size: 15px;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+}
+
+/* line 22, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#section-contact .input:valid:not(:placeholder-shown) {
+  background-image: url("../images/icons/check.svg");
+}
+
+/* line 26, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#section-contact .input:invalid {
+  background-color: rgba(255, 210, 128, 0.25);
+}
+
+/* line 28, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#section-contact .input:invalid:not(:placeholder-shown) {
+  background-image: url("../images/icons/cancel.svg");
+}
+
+/* line 32, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#section-contact .input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* line 35, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#section-contact .input:focus {
+  background-color: rgba(50, 103, 103, 0.4);
+  outline: none;
+}
+
+/* line 40, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#section-contact .message-row:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+/* line 43, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#section-contact .btn {
+  width: 45%;
+}
+
+/* line 46, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#section-contact .social-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  fill: rgba(86, 61, 124, 0.8);
+  box-shadow: 0 0 5px 2px rgba(86, 61, 124, 0.8);
+  transition: box-shadow 0.25s linear;
+}
+
+/* line 53, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#section-contact .social-icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* line 59, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#section-contact .social-icon .inner-shape {
+  transition: fill 0.25s linear;
+}
+
+/* line 62, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#section-contact .social-icon .outer-shape {
+  transition: fill 0.25s linear;
+}
+
+/* line 68, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+.text-grey {
+  color: #cccccc;
+}
+
+/* line 74, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-gmail {
+  box-shadow: red;
+}
+
+/* line 76, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-gmail .outer-shape {
+  fill: transparent;
+}
+
+/* line 79, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-gmail:hover {
+  box-shadow: none;
+}
+
+/* line 81, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-gmail:hover .inner-shape {
+  fill: #bd372b;
+}
+
+/* line 84, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-gmail:hover .outer-shape {
+  fill: #c8c8c8;
+}
+
+/* line 74, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-facebook {
+  box-shadow: red;
+}
+
+/* line 76, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-facebook .outer-shape {
+  fill: transparent;
+}
+
+/* line 79, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-facebook:hover {
+  box-shadow: none;
+}
+
+/* line 81, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-facebook:hover .inner-shape {
+  fill: white;
+}
+
+/* line 84, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-facebook:hover .outer-shape {
+  fill: #3b5998;
+}
+
+/* line 74, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-twitter {
+  box-shadow: red;
+}
+
+/* line 76, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-twitter .outer-shape {
+  fill: transparent;
+}
+
+/* line 79, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-twitter:hover {
+  box-shadow: none;
+}
+
+/* line 81, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-twitter:hover .inner-shape {
+  fill: whitesmoke;
+}
+
+/* line 84, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-twitter:hover .outer-shape {
+  fill: #0399ff;
+}
+
+/* line 74, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-linkedin {
+  box-shadow: red;
+}
+
+/* line 76, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-linkedin .outer-shape {
+  fill: transparent;
+}
+
+/* line 79, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-linkedin:hover {
+  box-shadow: none;
+}
+
+/* line 81, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-linkedin:hover .inner-shape {
+  fill: #f0f0f0;
+}
+
+/* line 84, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-linkedin:hover .outer-shape {
+  fill: #007ab9;
+}
+
+/* line 74, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-github {
+  box-shadow: red;
+}
+
+/* line 76, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-github .outer-shape {
+  fill: transparent;
+}
+
+/* line 79, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-github:hover {
+  box-shadow: none;
+}
+
+/* line 81, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-github:hover .inner-shape {
+  fill: white;
+}
+
+/* line 84, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-github:hover .outer-shape {
+  fill: #0a0a0a;
+}
+
+/* line 74, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-treehouse {
+  box-shadow: red;
+}
+
+/* line 76, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-treehouse .outer-shape {
+  fill: transparent;
+}
+
+/* line 79, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-treehouse:hover {
+  box-shadow: none;
+}
+
+/* line 81, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-treehouse:hover .inner-shape {
+  fill: #f0f0f0;
+}
+
+/* line 84, D:/MAMP/testsites/personal-website/scss/components/_contact.scss */
+#icon-treehouse:hover .outer-shape {
+  fill: #5fcf80;
+}
+
+/* line 1, D:/MAMP/testsites/personal-website/scss/components/_footer.scss */
+.main-footer {
+  background-color: #97bdd0;
+}
+
+/* line 3, D:/MAMP/testsites/personal-website/scss/components/_footer.scss */
+.main-footer .citation {
+  color: grey;
+}
+
+/* line 6, D:/MAMP/testsites/personal-website/scss/components/_footer.scss */
+.main-footer a {
+  color: #676767;
 }
 
 /*# sourceMappingURL=../css/styles.map */

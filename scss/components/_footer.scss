@@ -1,0 +1,9 @@
+.main-footer {
+  background-color: $color-footer;
+  .citation {
+    color: grey;
+  }
+  a {
+    color: darken(grey, 10%);
+  }
+}

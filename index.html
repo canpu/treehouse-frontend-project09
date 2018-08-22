@@ -35,47 +35,212 @@
       </div>
     </nav>
     <main>
-      <div id="section-welcome" class="jumbotron d-flex flex-column justify-content-center">
-        <div class="container px-2 px-md-5 mx-auto d-flex flex-column justify-content-between">
+      <div id="section-welcome" class="d-flex flex-column justify-content-center bg-container jumbotron">
+        <img class="bg-img h-100 w-100" src="images/coding.gif" alt="wormhole">
+        <div class="container px-4 px-md-5 mx-auto d-flex flex-column justify-content-between">
           <div class="row">
             <div class="col d-none d-md-block container">
-              <img class="icon reveal-left mx-auto d-block mr-md-1" src="images\softtware-engineer.svg" alt="programmer">
+              <img class="icon reveal-left mx-auto d-block mr-md-1" src="images/icons/softtware-engineer.svg" alt="programmer">
             </div>
             <div class="col d-flex flex-column justify-content-center">
               <h1 class="display-4 text-white text-center text-md-left reveal-left">Can Pu</h1>
-              <p class="lead short-introduction text-center text-md-left reveal-right">Front-End Developer</p>
+              <p class="lead short-introduction text-center text-md-left reveal-right">Pursuing Optimization and Statistics</p>
             </div>
           </div>
-          <div class="row mt-4 mt-md-5 text-white">
-            <a id="btn-view-more" class="btn btn-icon btn-primary btn-lg reveal-left ripple mt-auto d-block col-md mb-4 mb-md-0 mr-md-4 btn-outline-info" href="#section-education" role="button"><p class="d-block">View More</p></a>
-            <a id="btn-download-resume" class="btn btn-icon btn-primary btn-lg reveal-right ripple mt-auto d-block col-md ml-md-4 btn-outline-info" href=""><p class="d-block">Download Resume</p></a>
+          <div class="row mt-2 mt-md-5 text-white d-flex flex-row justify-content-around">
+            <a id="btn-view-more" class="btn btn-icon btn-view-more btn-primary btn-lg reveal-left ripple mt-auto d-block col-md mb-4 mb-md-0 mr-md-4 btn-outline-info" href="#section-education" role="button"><p class="d-block">View More</p></a>
+            <a id="btn-download-resume" class="btn btn-icon btn-download btn-primary btn-lg reveal-right ripple mt-auto d-block col-md ml-md-4 btn-outline-info" href="doc/Can Pu.pdf" download><p class="d-block">Download Resume</p></a>
           </div>
         </div>
       </div>
-      <section id="section-education">
-        <h2>EDUCATION</h2>
-        <img height="300"/>
+      <section id="section-education" class="section d-flex flex-column justify-content-center bg-container">
+        <img class="bg-img" src="images/institutes/university.jpg" alt="university">
+        <header class="section-header container row reveal-bottom d-flex flex-row justify-content-between">
+          <img class="section-icon" src="images/icons/graduate-cap.svg" alt="graduate cap icon">
+          <h2 class="section-heading h2 text-center mb-0">EDUCATION</h2>
+        </header>
+        <div id="education-canvas" class="section-wrapper">
+          <div id="education-axis"></div>
+        </div>
       </section>
-      <section id="section-skills">
-        <h2>SKILLS</h2>
-        <img height="300"/>
+      <section id="section-skills" class="section d-flex flex-column justify-content-center bg-container">
+        <img class="bg-img" src="images/coding.jpg" alt="html coding">
+        <header class="section-header container row reveal-bottom d-flex flex-row justify-content-between">
+          <img class="section-icon" src="images/icons/skills.svg" alt="skills icon">
+          <h2 class="section-heading h2 text-center mb-0">SKILLS</h2>
+        </header>
+        <div class="section-wrapper d-flex flex-row justify-content-around align-items-stretch flex-wrap w-100">
+        </div>
       </section>
-      <section id="section-portfolio">
-        <h2>PORTFOLIO</h2>
-        <img height="300"/>
+      <section id="section-portfolio" class="section d-flex flex-column justify-content-center align-items-center bg-container">
+        <img class="bg-img" src="images/industry.jpg" alt="industry">
+        <header class="section-header container row reveal-bottom d-flex flex-row justify-content-between">
+          <img class="section-icon" src="images/icons/gallery.svg" alt="gallery icon">
+          <h2 class="section-heading h2 text-center mb-0">PORTFOLIO</h2>
+        </header>
+        <div class="project-control col-md-6 d-flex flex-row justify-content-around align-items-stretch my-5 reveal-bottom p-0">
+          <div class="project-control-option col-sm-4 m-0 p-0 border-right">
+            <input type="radio" id="radio-all-projects" name="project-display-tag" checked />
+            <label class="w-100 h-100 text-center text-white m-0" for="radio-all-projects">All</label>
+          </div>
+          <div class="project-control-option col-sm-4 m-0 p-0 border-right">
+            <input type="radio" id="radio-frontend-projects" name="project-display-tag" />
+            <label class="w-100 h-100 text-center text-white m-0" for="radio-frontend-projects">Front End</label>
+          </div>
+          <div class="project-control-option col-sm-4 m-0 p-0">
+            <input type="radio" id="radio-android-projects" name="project-display-tag" />
+            <label class="w-100 h-100 text-center text-white m-0" for="radio-android-projects">Android</label>
+          </div>
+        </div>
+        <div class="section-wrapper d-flex flex-row justify-content-around align-items-stretch flex-wrap w-100">
+        </div>
       </section>
-      <section id="section-contact">
-        <h2>CONTACT</h2>
-        <img height="300"/>
+      <section id="section-contact" class="section d-flex flex-column justify-content-center align-items-center bg-container">
+        <img class="bg-img" src="images/email.jpg" alt="email">
+        <header class="section-header container row reveal-bottom d-flex flex-row justify-content-between">
+          <img class="section-icon" src="images/icons/phone-book.svg" alt="phone book">
+          <h2 class="section-heading h2 text-center mb-0">CONTACT</h2>
+        </header>
+        <div class="section-wrapper d-flex flex-row justify-content-around align-items-stretch flex-wrap w-100">
+          <div class="row p-0 m-0 w-100">
+            <div class="col-md-7 pr-5 mb-3 mt-4">
+              <form  class="d-flex flex-column justify-content-between align-items-stretch text-white h-100" action="https://formspree.io/pucanmail@gmail.com" method="POST">
+                <div class="d-flex flex-column justify-content-center align-items-center mb-auto reveal-bottom">
+                  <h3 class="text-center h4">Message</h3>
+                  <p class="small text-center">You are emailing me through <a class="text-white" href="https://formspree.io/" target="_blank">Formspree</a></p>
+                </div>
+                <div class="message-row row justify-content-between d-flex align-items-center">
+                  <div class=" col-lg-5 reveal-bottom p-0 d-flex flex-nowrap align-items-center mb-1">
+                    <label class="mb-1 mr-1" for="messager-name">Name: </label>
+                    <input class="input w-100" type="text" name="name" id="messager-name" placeholder="Required" required>
+                  </div>
+                  <div class="col-lg-6 reveal-bottom p-0 d-flex flex-nowrap align-items-center mb-1">
+                    <label class="mb-1 mr-1" for="messager-phone">Phone: </label>
+                    <input class="input w-100" type="tel" name="phone" id="messager-phone" placeholder="Optional; 10 digits" pattern="[0-9]{10}">
+                  </div>
+                </div>
+                <div class="message-row row reveal-bottom align-items-center flex-nowrap">
+                  <label class="mb-1 mr-1" for="messager-email">Email: </label>
+                  <input class="input w-100" type="email" name="email" id="messager-email" placeholder="Required" required>
+                </div>
+                <div class="message-row row reveal-bottom">
+                  <label class="mb-1" for="messager-message">Message: </label>
+                  <textarea class="input w-100" name="message" id="message-message" placeholder="Enter your message here" required></textarea>
+                </div>
+                <div class="message-row d-flex flex-row justify-content-around align-items-center mt-2 reveal-bottom">
+                  <button id="btn-send" type="submit" class="btn btn-info ripple">Send</button>
+                  <button id="btn-send" type="reset" class="btn btn-info ripple">Reset</button>
+                </div>
+              </form>
+            </div>
+            <br class="h-100 d-none b-1 d-md-block"/>
+            <hr class="w-100 d-block d-md-none"/>
+            <div class="col-md-5 d-flex flex-column justify-content-between align-items-start text-white mt-4">
+              <h3 class="text-center h4 reveal-bottom w-100 mx-auto">Ohter Methods</h3>
+              <div class="d-flex flex-row justify-content-start align-items-center mt-4 reveal-bottom flex-wrap">
+                <p class="lead mb-2">Email</p>
+                <a class="text-grey w-100" href="mailto:pucanmail@gmail.com">pucanmail@gmail.com</a>
+              </div>
+              <div class="d-flex flex-row justify-content-start align-items-center mt-4 reveal-bottom flex-wrap">
+                <p class="lead mb-2">Address</p>
+                <p class="text-grey w-100"><a class="text-grey" href="https://www.google.com/maps/place/Ashdown+House,+Cambridge,+MA+02139/@42.3587599,-71.1033547,17z/data=!3m1!4b1!4m5!3m4!1s0x89e379fe394d8e4d:0x9a6e300d855d7c9d!8m2!3d42.3587599!4d-71.101166" target="_blank">Ashdown House, Cambridge, MA</a></p>
+              </div>
+              <div class="social-container d-flex flex-row justify-content-around align-items-center mt-4 flex-wrap">
+                <a class="social-icon-container reveal-bottom m-3" title="Gmail" href="mailto:pucanmail@gmail.com" target="_blank">
+                  <svg id="icon-gmail" class="social-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
+                    <circle class="outer-shape" cx="256" cy="256" r="256"></circle>
+                  	<path class="inner-shape" transform="scale(0.68) translate(120, 120)" d="M462.275,55.689c-0.085-0.001-0.162-0.026-0.247-0.026c-0.039,0-0.076-0.011-0.115-0.011H50.087    c-0.034,0-0.066,0.01-0.1,0.01c-0.073,0-0.143,0.021-0.217,0.022C22.3,55.859,0,78.228,0,105.739v300.522    c0,27.619,22.468,50.087,50.087,50.087h411.826c27.619,0,50.087-22.468,50.087-50.087V105.739    C512,78.244,489.725,55.888,462.275,55.689z M411.826,422.957H100.174V240.652l120.413,120.414    c9.761,9.761,22.587,14.652,35.413,14.652c12.826,0,25.652-4.892,35.413-14.652l120.414-120.414V422.957z M256,254.805    L90.239,89.043h331.54L256,254.805z" />
+                  </svg>
+                </a>
+                <a class="social-icon-container reveal-bottom m-3" title="Facebook" href="https://www.facebook.com/can.pu.5?ref=bookmarks" target="_blank">
+                  <svg  id="icon-facebook" class="social-icon" viewBox="0 0 112.196 112.196" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                		<circle class="outer-shape" cx="56.098" cy="56.098" r="56.098"/>
+                		<path class="inner-shape" d="M70.201,58.294h-10.01v36.672H45.025V58.294h-7.213V45.406h7.213v-8.34
+                			c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.668-3.217,3.513v7.585h11.334L70.201,58.294z"/>
+                  </svg>
+                </a>
+                <a class="social-icon-container reveal-bottom m-3" title="Twitter" href="https://twitter.com/pucan9" target="_blank">
+                  <svg id="icon-twitter" class="social-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+                  	<circle class="outer-shape" cx="50" cy="50" r="48"></circle>
+                  	<path class="inner-shape"  transform="translate(25,25) scale(0.5)" d="M99.001,19.428c-3.606,1.608-7.48,2.695-11.547,3.184c4.15-2.503,7.338-6.466,8.841-11.189 c-3.885,2.318-8.187,4-12.768,4.908c-3.667-3.931-8.893-6.387-14.676-6.387c-11.104,0-20.107,9.054-20.107,20.223 c0,1.585,0.177,3.128,0.52,4.609c-16.71-0.845-31.525-8.895-41.442-21.131C6.092,16.633,5.1,20.107,5.1,23.813 c0,7.017,3.55,13.208,8.945,16.834c-3.296-0.104-6.397-1.014-9.106-2.529c-0.002,0.085-0.002,0.17-0.002,0.255 c0,9.799,6.931,17.972,16.129,19.831c-1.688,0.463-3.463,0.71-5.297,0.71c-1.296,0-2.555-0.127-3.783-0.363 c2.559,8.034,9.984,13.882,18.782,14.045c-6.881,5.424-15.551,8.657-24.971,8.657c-1.623,0-3.223-0.096-4.796-0.282 c8.898,5.738,19.467,9.087,30.82,9.087c36.982,0,57.206-30.817,57.206-57.543c0-0.877-0.02-1.748-0.059-2.617 C92.896,27.045,96.305,23.482,99.001,19.428z"></path>
+                  </svg>
+                </a>
+                <a class="social-icon-container reveal-bottom m-3" title="LinkedIn" href="https://www.linkedin.com/in/canpu/" target="_blank">
+                  <svg id="icon-linkedin" class="social-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 viewBox="0 0 112.196 112.196" style="enable-background:new 0 0 112.196 112.196;" xml:space="preserve">
+                  	<circle class="outer-shape" cx="56.098" cy="56.097" r="56.098"/>
+                  	<path class="inner-shape" d="M89.616,60.611v23.128H76.207V62.161c0-5.418-1.936-9.118-6.791-9.118
+                  		c-3.705,0-5.906,2.491-6.878,4.903c-0.353,0.862-0.444,2.059-0.444,3.268v22.524H48.684c0,0,0.18-36.546,0-40.329h13.411v5.715
+                  		c-0.027,0.045-0.065,0.089-0.089,0.132h0.089v-0.132c1.782-2.742,4.96-6.662,12.085-6.662
+                  		C83.002,42.462,89.616,48.226,89.616,60.611L89.616,60.611z M34.656,23.969c-4.587,0-7.588,3.011-7.588,6.967
+                  		c0,3.872,2.914,6.97,7.412,6.97h0.087c4.677,0,7.585-3.098,7.585-6.97C42.063,26.98,39.244,23.969,34.656,23.969L34.656,23.969z
+                  		 M27.865,83.739H41.27V43.409H27.865V83.739z"/>
+                  </svg>
+                </a>
+                <a class="social-icon-container reveal-bottom m-3" title="Github" href="https://github.com/canpu" target="_blank">
+                  <svg id="icon-github" class="social-icon" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <circle class="outer-shape" cx="50" cy="50" r="48"></circle>
+                    <path class="inner-shape" transform="translate(25,25) scale(0.5)" d="M50,1C22.938,1,1,22.938,1,50s21.938,49,49,49s49-21.938,49-49S77.062,1,50,1z M79.099,79.099 c-3.782,3.782-8.184,6.75-13.083,8.823c-1.245,0.526-2.509,0.989-3.79,1.387v-7.344c0-3.86-1.324-6.699-3.972-8.517 c1.659-0.16,3.182-0.383,4.57-0.67c1.388-0.287,2.855-0.702,4.402-1.245c1.547-0.543,2.935-1.189,4.163-1.938 c1.228-0.75,2.409-1.723,3.541-2.919s2.082-2.552,2.847-4.067s1.372-3.334,1.818-5.455c0.446-2.121,0.67-4.458,0.67-7.01 c0-4.945-1.611-9.155-4.833-12.633c1.467-3.828,1.308-7.991-0.478-12.489l-1.197-0.143c-0.829-0.096-2.321,0.255-4.474,1.053 c-2.153,0.798-4.57,2.105-7.249,3.924c-3.797-1.053-7.736-1.579-11.82-1.579c-4.115,0-8.039,0.526-11.772,1.579 c-1.69-1.149-3.294-2.097-4.809-2.847c-1.515-0.75-2.727-1.26-3.637-1.532c-0.909-0.271-1.754-0.439-2.536-0.503 c-0.782-0.064-1.284-0.079-1.507-0.048c-0.223,0.031-0.383,0.064-0.478,0.096c-1.787,4.53-1.946,8.694-0.478,12.489 c-3.222,3.477-4.833,7.688-4.833,12.633c0,2.552,0.223,4.889,0.67,7.01c0.447,2.121,1.053,3.94,1.818,5.455 c0.765,1.515,1.715,2.871,2.847,4.067s2.313,2.169,3.541,2.919c1.228,0.751,2.616,1.396,4.163,1.938 c1.547,0.543,3.014,0.957,4.402,1.245c1.388,0.287,2.911,0.511,4.57,0.67c-2.616,1.787-3.924,4.626-3.924,8.517v7.487 c-1.445-0.43-2.869-0.938-4.268-1.53c-4.899-2.073-9.301-5.041-13.083-8.823c-3.782-3.782-6.75-8.184-8.823-13.083 C9.934,60.948,8.847,55.56,8.847,50s1.087-10.948,3.231-16.016c2.073-4.899,5.041-9.301,8.823-13.083s8.184-6.75,13.083-8.823 C39.052,9.934,44.44,8.847,50,8.847s10.948,1.087,16.016,3.231c4.9,2.073,9.301,5.041,13.083,8.823 c3.782,3.782,6.75,8.184,8.823,13.083c2.143,5.069,3.23,10.457,3.23,16.016s-1.087,10.948-3.231,16.016 C85.848,70.915,82.88,75.317,79.099,79.099L79.099,79.099z"></path>
+                  </svg>
+                </a>
+                <a class="social-icon-container reveal-bottom m-3" title="Treehouse" href="https://teamtreehouse.com/pucan" target="_blank">
+                  <svg id="icon-treehouse" class="social-icon" viewBox="0 0 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                    <circle class="outer-shape" cx="125" cy="125" r="125"></circle>
+                    <path class="inner-shape" transform="scale(0.7) translate(52, 46)" d="M242.346667,60.3733333 C238.933333,58.6666667 231.253333,55.2533333 222.72,50.1333333 C213.333333,45.0133333 198.826667,53.5466667 189.44,68.0533333 L173.226667,95.36 C167.253333,107.306667 168.106667,120.106667 175.786667,131.2 L176.64,132.053333 C184.32,143.146667 194.56,152.533333 197.12,155.946667 C198.826667,157.653333 200.533333,161.066667 201.386667,163.626667 C203.946667,173.866667 198.826667,183.253333 188.586667,185.813333 C179.2,188.373333 168.96,182.4  165.546667,173.013333 C164.693333,170.453333 164.693333,167.893333 164.693333,165.333333 C165.546667,161.066667 163.84,154.24 157.866667,149.12 C151.893333,142.293333 139.946667,155.093333 136.533333,167.04 L136.533333,167.893333 C133.12,180.693333 130.56,190.933333 131.413333,191.786667 C131.413333,192.64 132.266667,193.493333 132.266667,193.493333 C137.386667,203.733333 133.973333,215.68 123.733333,220.8 C113.493333,225.92 100.693333,222.506667 95.5733333,212.266667 C90.4533333,202.026667 93.8666667,190.08 104.106667,184.96 C104.96,184.96 104.96,184.106667 105.813333,184.106667 C106.666667,184.106667 108.373333,178.133333 110.933333,172.16 C112.64,166.186667 114.346667,161.066667 114.346667,161.066667 C114.346667,160.213333 114.346667,159.36 115.2,159.36 L125.44,123.52 L115.2,144.853333 C113.493333,140.586667 111.786667,140.586667 106.666667,144 C104.106667,145.706667 98.9866667,149.973333 97.28,151.68 C93.0133333,155.093333 89.6,161.066667 87.8933333,164.48 C87.04,167.04 85.3333333,168.746667 83.6266667,170.453333 C75.9466667,177.28 64,175.573333 58.0266667,167.893333 C52.0533333,160.213333 53.76,149.973333 61.44,144 C64,142.293333 66.56,140.586667 69.12,140.586667 C73.3866667,139.733333 89.6,129.493333 98.9866667,123.52 C100.693333,122.666667 102.4,120.96 103.253333,120.106667 L128,102.186667 L105.813333,114.133333 L100.693333,114.133333 C93.8666667,114.986667 85.3333333,115.84 83.6266667,118.4 C82.7733333,119.253333 81.92,120.96 80.2133333,121.813333 C73.3866667,125.226667 63.1466667,123.52 57.1733333,116.693333 C52.0533333,109.013333 53.76,99.6266667 60.5866667,94.5066667 C64.8533333,91.9466667 68.2666667,91.0933333 71.68,91.0933333 C77.6533333,91.0933333 93.0133333,94.5066667 105.813333,91.9466667 L109.226667,91.0933333 C122.026667,88.5333333 137.386667,78.2933333 143.36,66.3466667 C143.36,66.3466667 149.333333,55.2533333 157.013333,43.3066667 C164.693333,30.5066667 163.84,16.8533333 156.16,11.7333333 L141.653333,3.2 C133.973333,-1.06666667 122.026667,-1.06666667 114.346667,3.2 L13.6533333,58.6666667 C5.97333333,62.9333333 0,74.0266667 0,82.56 L0,191.786667 C0,200.32 5.97333333,209.706667 13.6533333,213.973333 L115.2,270.293333 C122.88,274.56 134.826667,274.56 142.506667,270.293333 L242.346667,213.12 C250.026667,208.853333 256,199.466667 256,190.933333 L256,82.56 C256,74.0266667 250.026667,64.64 242.346667,60.3733333 L242.346667,60.3733333 Z"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <h4 id="two">two</h4>
-      <p>...</p>
-      <div class="reveal" height="300">AAAAAAAAAAa</div>
-      <img height="300"/>
-      <h4 id="three">three</h4>
-      <p>...</p>
-      <div class="reveal" height="300">AAAAAAAAAAa</div>
     </main>
+    <footer class="main-footer d-flex flex-column justify-content-center align-items-center p-5 m-0 w-100">
+      <p class="copyright lead text-center">Copyright &copy; <copyright>Can Pu</copyright> &middot 2018</p>
+      <div class="citation small text-center">Icons made by <a class="text-g" href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    </footer>
+    <div id="modal-education" class="modal fade w-100" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div id="education-book" class="modal-content">
+          <div id="education-book-cover" class="education-page w-100 h-100" page="0">
+            <div class="education-page-front bg-container d-flex flex-column align-items-center justify-content-center">
+              <div class="education-page-control-wrapper modal-header w-100 d-flex flex-row align-items-center justify-content-around py-0">
+                <button type="button" class="modal-previous close" type="button"><span>&#8249;</span></button>
+                <button type="button" class="modal-next close" type="button"><span>&#8250;</span></button>
+                <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <img class="bg-img" src="images/institutes/university.jpg" alt="university">
+              <h3 class="education-book-heading text-center my-auto">Education Experiences</h3>
+            </div>
+            <div class="education-page-back d-flex flex-column justify-content-center align-items-center">
+              <img class="education-page-back-img" src="" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-project" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content w-100 h-100">
+          <div id="carousel-project" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+            </div>
+            <a class="carousel-control-prev" href="#carousel-project" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-project" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

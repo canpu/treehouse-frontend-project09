@@ -9,10 +9,12 @@
   overflow: hidden;
   position: relative;
   height: $height-btn;
+  line-height: $height-btn;
   background-position: center;
   background-repeat: no-repeat;
   background-size: $size-btn-icon $size-btn-icon;
-  transition: background-position $transition-time-md linear;
+  transition: background-position $transition-time-sm linear;
+  padding: 0;
   p {
     left: 0;
     right: 0;
@@ -21,7 +23,7 @@
     top: ($height-btn - $height-btn-text) / 2;
     transform: translateY(-$height-btn);
     transition-property: transform;
-    transition-duration: $transition-time-md;
+    transition-duration: $transition-time-sm;
     transition-timing-function: linear;
   }
   &:hover {
@@ -32,10 +34,14 @@
   }
 }
 
-#btn-download-resume {
-  background-image: url("../images/download.svg");
+.btn-download {
+  background-image: url("../images/icons/download.svg");
 }
 
-#btn-view-more {
-  background-image: url("../images/eye.svg");
+.btn-view-more {
+  background-image: url("../images/icons/eye.svg");
+}
+
+.btn-code {
+  background-image: url("../images/icons/code.svg");
 }

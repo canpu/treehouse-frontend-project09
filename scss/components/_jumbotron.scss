@@ -1,0 +1,16 @@
+#section-welcome {
+  min-height: 100vh;
+  background-color: rgba($color-tertiary, 1);
+  border-radius: 0;
+  margin-bottom: 0;
+  .icon {
+    max-width: $size-profile;
+    max-height: $size-profile;
+  }
+  .bg-img {
+    filter : opacity(0.05);
+  }
+  .btn {
+    max-width: 300px;
+  }
+}

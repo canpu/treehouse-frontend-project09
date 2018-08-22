@@ -1,4 +1,5 @@
 /* Breakpoints */
+$screen-types: ('xs', 'sm', 'md', 'lg', 'xl');
 $breakpoints: (
   'sm': 576px,
   'md': 768px,
@@ -8,9 +9,9 @@ $breakpoints: (
 
 /* Colors */
 $color-primary: rgb(86, 61, 124); // purple
-$color-secondary: rgb(0, 123, 255); // blue
-$color-tertiary: rgb(76, 105, 177); //purple-blue
-$color-quaternary: rgb(146, 140, 192); // light purple
+$color-secondary: rgb(136, 77, 255); // purple
+$color-tertiary: rgb(92, 92, 214); //purple-blue
+$color-quaternary: rgb(161, 156, 201); // very light blue
 $color-txt-primary: white;
 $color-ripple: rgba(50, 50, 50, 0.5); //grey
 $color-info: rgb(23, 164, 182); // light blue
@@ -30,14 +31,97 @@ $transition-time-md: 0.5s;
 $transition-time-lg: 0.75s;
 $transition-time-xl: 1s;
 
+/* Images */
+$size-section-icon: 35px;
+$opacity-bg-img: 0.075;
+$opacity-bg-card: 0.15;
+
+/* Sections */
+$margin-section-wrapper: 50px;
+
 /* Jumbotron */
 $size-profile: 200px;
 $height-btn: 50px;
 $height-btn-text: 30px;
 $size-btn-icon: 30px;
 
-/* Fade-In Effect */
-$defaultOffsetDirection: 90; // from bottom to top
+/* Education */
+$max-education-allowable: 25;
+$color-education-axis-primary: rgb(166, 77, 255);
+$color-education-axis-secondary: rgb(115, 0, 230);
+$width-education-axis: 5px;
+$height-education-card: 150px; // to change
+$width-education-card-xs: 97.5%;
+$width-education-card-sm: 60%;
+$width-education-card: 400px;
+$gutter-education-card: 50px;
+$gutter-education-card-md: $height-education-card + $gutter-education-card;
+$gutter-education-card-lg: ($height-education-card + $gutter-education-card) / 2;
+$radius-education-axis: 20px;
+$length-education-assoc-line: 65px;
+$width-eucation-canvas-md: $radius-education-axis + $length-education-assoc-line + $width-education-card;
+$width-eucation-canvas-lg: ($length-education-assoc-line + $width-education-card) * 2;
+$padding-education-card: 10px;
+$color-education-page-bg: white;
+$perspective-depth-education-book: 800px;
+$widths-education-pages: (
+  'xs': 275px,
+  'sm': 400px,
+  'md': 425px,
+  'lg': 450px,
+  'xl': 500px
+);
+$heights-education-pages: (
+  'xs': 500px,
+  'sm': 450px,
+  'md': 400px,
+  'lg': 400px,
+  'xl': 400px
+);
+$height-education-page-control: 30px;
 
-/* Math Constants */
-$pi: 3.141592653;
+/* Skills */
+$padding-section-skills: 30px;
+$color-skillset: rgb(153, 153, 255);
+$radius-skillset: 10px;
+$height-skill-bar: 20px;
+
+/* Portfolio */
+$lineheight-portfolio-control: 40px;
+$size-project-card: 250px;
+$size-modal-img: 250px;
+$heights-project-carousel-slides: (
+  'xs': 950px,
+  'sm': 650px,
+  'md': 665px,
+  'lg': 600px,
+  'xl': 595px
+);
+
+/* Contact */
+$color-contact: rgb(75, 155, 155);
+
+/* Modal */
+$size-modal-control-icon: 25px;
+$height-project-card-slide: 110px;
+
+/* Icons */
+$colors-social-icons-outer: (
+  'facebook': rgb(59, 89, 152),
+  'github': rgb(10, 10, 10),
+  'linkedin': rgb(0, 122, 185),
+  'twitter': rgb(3, 153, 255),
+  'gmail': rgb(200, 200, 200),
+  'treehouse': rgb(95, 207, 128)
+);
+$colors-social-icons-inner: (
+  'facebook': white,
+  'github': white,
+  'linkedin': rgb(240, 240, 240),
+  'twitter': rgb(245, 245, 245),
+  'gmail': rgb(189, 55, 43),
+  'treehouse': rgb(240, 240, 240),
+);
+
+/* Footer */
+$color-footer: rgb(151, 189, 208);

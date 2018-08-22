@@ -1,0 +1,162 @@
+#section-portfolio {
+  background-color: $color-secondary;
+  & > .bg-img {
+    filter: hue-rotate(90deg);
+  }
+  .project-control {
+    border-radius: $lineheight-portfolio-control / 2;
+    overflow: hidden;
+    box-shadow: 0 0 2px 2px rgba(lighten($color-primary, 10%), 0.75);
+    .project-control-option {
+      border-color: rgba(lighten($color-primary, 10%), 0.75) !important;
+    }
+    label {
+      cursor: pointer;
+      line-height: $lineheight-portfolio-control;
+      vertical-align: middle;
+      transition: background-color $transition-time-md linear;
+      background-color: rgba(lighten($color-primary, 20%), 0.5);
+    }
+    input[type*="radio"] {
+      display: none;
+      &:checked + label {
+        background: red;
+        background-color: rgba(lighten($color-primary, 10%), 0.95);
+      }
+    }
+  }
+  .modal-project {
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+}
+
+.project {
+  &-card {
+    position: relative;
+    cursor: pointer;
+    width: $size-project-card;
+    height: $size-project-card;
+    border: 7.5px solid rgba(black, 0.85);
+    border-radius: 5px;
+    box-shadow: 10px 10px 3px 3px rgba(black, 0.2);
+    opacity: 1;
+    transition-property: transform, box-shadow;
+    transition-duration: $transition-time-sm;
+    transition-timing-function: linear;
+    overflow: hidden;
+    &-slide {
+      position: absolute;
+      top: $size-project-card - $height-project-card-slide;
+      background-color: rgba(black, 0.35);
+      width: 100%;
+      height: 100%;
+      color: $color-txt-primary;
+      padding: 25px;
+      transition-property: top, background-color;
+      transition-delay: $transition-time-sm, 0;
+      transition-duration: $transition-time-sm;
+      transition-timing-function: linear;
+      transition: top $transition-time-sm ease-in $transition-time-xs,
+                  background-color $transition-time-sm linear;
+    }
+    &-title {
+      text-align: center;
+    }
+    &-subtitle {
+      text-align: center;
+    }
+    &-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.75;
+      transition-property: transform, opacity;
+      transition-duration: $transition-time-sm;
+      transition-timing-function: linear;
+    }
+    &:hover {
+      transform: translate(-5px, -5px);
+      box-shadow: 15px 15px 3px 3px rgba(black, 0.2);
+      & .project-card-img {
+        transform: scale(1.15);
+        opacity: 0.5;
+      }
+      & .project-card-slide {
+        background-color: rgba(black, 0.5);
+        top: 0;
+      }
+    }
+  }
+}
+
+.project-modal-img {
+  border-radius: 5px;
+  border: 7.5px solid rgba(black, 0.85);
+  width: $size-modal-img;
+  height: $size-modal-img;
+  width: 100%;
+  box-shadow: 7.5px 7.5px 3px 3px rgba(black, 0.2);
+}
+
+#modal-project {
+  .carousel, .carousel-inner {
+    transition: height $transition-time-xl ease-out;
+  }
+  .carousel-item {
+    @include mediaall("height", $heights-project-carousel-slides);
+    padding: 45px;
+    background-color: rgba($color-primary, 0.5) !important;
+    transition-property: transform, background-color, color;
+    transition-duration: $transition-time-md;
+    transition-timing-function: linear;
+    @include media("sm") {
+      padding: 50px;
+    }
+    @include media("md") {
+      padding: 70px;
+    }
+  }
+  .active {
+    background-color: rgba($color-tertiary, 0.75) !important;
+  }
+  .tag {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 3px;
+    margin-bottom: 2px;
+    &:nth-child(even) {
+      background-color: rgba(orange, 0.5);
+      border: 2px solid rgba(orange, 0.75);
+    }
+    &:nth-child(odd) {
+      background-color: rgba(blue, 0.5);
+      border: 2px solid rgba(blue, 0.75);
+    }
+  }
+  .carousel-control-prev {
+    position: fixed;
+    left: 0px !important;
+    height: 50px;
+    width: 30px;
+    top: calc(50% - 25px);
+  }
+  .carousel-control-next {
+    position: fixed;
+    height: 50px;
+    width: 30px;
+    right: 0px !important;
+    top: calc(50% - 25px);
+  }
+  .btn {
+    width: 45% !important;
+  }
+  .close {
+    font-size: 30px;
+    color: white;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 2000;
+  }
+}

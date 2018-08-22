@@ -1,0 +1,121 @@
+{
+  "skillSets": [
+    {
+      "skillSetName": "Programming Languages",
+      "skills": [
+        {
+          "skillName": "C",
+          "skillScore": 47
+        },
+        {
+          "skillName": "C++",
+          "skillScore": 66
+        },
+        {
+          "skillName": "MEX",
+          "skillScore": 63
+        },
+        {
+          "skillName": "Java",
+          "skillScore": 53
+        },
+        {
+          "skillName": "Python",
+          "skillScore": 70
+        },
+        {
+          "skillName": "R",
+          "skillScore": 27
+        }
+      ]
+    },
+    {
+      "skillSetName": "Front End",
+      "skills": [
+        {
+          "skillName": "HTML",
+          "skillScore": 80
+        },
+        {
+          "skillName": "CSS",
+          "skillScore": 75
+        },
+        {
+          "skillName": "Sass",
+          "skillScore": 72
+        },
+        {
+          "skillName": "JavaScript",
+          "skillScore": 62
+        },
+        {
+          "skillName": "jQuery",
+          "skillScore": 75
+        },
+        {
+          "skillName": "AJAX",
+          "skillScore": 63
+        },
+        {
+          "skillName": "Bootstrap",
+          "skillScore": 57
+        }
+      ]
+    },
+    {
+      "skillSetName": "Parallel Computation",
+      "skills": [
+        {
+          "skillName": "OpenMPI",
+          "skillScore": 67
+        },
+        {
+          "skillName": "OpenMP",
+          "skillScore": 73
+        },
+        {
+          "skillName": "CUDA",
+          "skillScore": 53
+        }
+      ]
+    },
+    {
+      "skillSetName": "Numerical Packages",
+      "skills": [
+        {
+          "skillName": "Eigen",
+          "skillScore": 61
+        },
+        {
+          "skillName": "Numpy",
+          "skillScore": 69
+        },
+        {
+          "skillName": "deal.ii",
+          "skillScore": 53
+        }
+      ]
+    },
+    {
+      "skillSetName": "Mathematical Software",
+      "skills": [
+        {
+          "skillName": "Mathematica",
+          "skillScore": 67
+        },
+        {
+          "skillName": "Matlab",
+          "skillScore": 89
+        },
+        {
+          "skillName": "Maple",
+          "skillScore": 51
+        },
+        {
+          "skillName": "SAS",
+          "skillScore": 30
+        }
+      ]
+    }
+  ]
+}

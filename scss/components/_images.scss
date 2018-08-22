@@ -1,0 +1,14 @@
+.section-icon {
+  width: $size-section-icon;
+  height: $size-section-icon;
+}
+
+.bg {
+  &-img {
+    position: absolute;
+  }
+  &-container {
+    position: relative;
+    overflow: hidden;
+  }
+}

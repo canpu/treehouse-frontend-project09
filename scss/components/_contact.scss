@@ -1,0 +1,89 @@
+#section-contact {
+  background-color: $color-contact;
+  textarea {
+    min-height: 100px;
+  }
+  .input {
+    background-color: rgba(lighten($color-contact, 15%), 0.4);
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 5px;
+    resize: none;
+    color: $color-txt-primary;
+    height: 40px;
+    border: 2px solid rgba(darken($color-contact, 15%), 0.75);
+    background-repeat: no-repeat;
+    background-position: 7px center;
+    background-size: 15px;
+    transition-property: background-color;
+    transition-duration: $transition-time-sm;
+    transition-timing-function: linear;
+    &:valid {
+      &:not(:placeholder-shown) {
+        background-image: url("../images/icons/check.svg");
+      }
+    }
+    &:invalid {
+      background-color: rgba(lighten(orange, 25%), 0.25);
+      &:not(:placeholder-shown) {
+        background-image: url("../images/icons/cancel.svg");
+      }
+    }
+    &::placeholder {
+      color: rgba($color-txt-primary, 0.4);
+    }
+    &:focus {
+      background-color: rgba(darken($color-contact, 15%), 0.4);
+      outline: none;
+    }
+  }
+  .message-row:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .btn {
+    width: 45%;
+  }
+  .social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    fill: rgba($color-primary, 0.8);
+    box-shadow: 0 0 5px 2px rgba($color-primary, 0.8);
+    transition: box-shadow $transition-time-sm linear;
+    &-container {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .inner-shape {
+      transition: fill $transition-time-sm linear;
+    }
+    .outer-shape {
+      transition: fill $transition-time-sm linear;
+    }
+  }
+}
+
+.text-grey {
+  color: darken($color-txt-primary, 20%);
+}
+
+$social-icons: ('gmail', 'facebook', 'twitter', 'linkedin', 'github', 'treehouse');
+@each $icon in $social-icons {
+  #icon-#{$icon} {
+    box-shadow: red;
+    .outer-shape {
+      fill: transparent;
+    }
+    &:hover {
+      box-shadow: none;
+      .inner-shape {
+        fill: map-get($colors-social-icons-inner, $icon);
+      }
+      .outer-shape {
+        fill: map-get($colors-social-icons-outer, $icon);
+      }
+    }
+  }
+}

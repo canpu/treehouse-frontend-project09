@@ -4,7 +4,7 @@
     background-color: $color-primary;
   }
   &-bg-secondary {
-    background-color: rgba($color-primary, 0.1);
+    background-color: rgba($color-primary, 0.25);
   }
   &-min-height-primary {
     min-height: $height-navbar-normal !important;
@@ -37,5 +37,18 @@
     transition-timing-function: ease-in;
     overflow: hidden;
     pointer-events: none;
+  }
+}
+
+/* Rotation */
+@keyframes linearRotation {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }

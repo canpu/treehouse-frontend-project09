@@ -1,0 +1,189 @@
+#section-education {
+  background-color: $color-quaternary;
+}
+
+#education-canvas {
+  position: relative;
+  overflow: visible;
+  width: 95%;
+  margin-top: $margin-section-wrapper + $radius-education-axis;
+  @include media("md") {
+    width: $width-eucation-canvas-md;
+    margin-left: $radius-education-axis;
+  }
+  @include media("lg") {
+    width: $width-eucation-canvas-lg;
+    margin-left: 0;
+  }
+  #education-axis {
+    @include media("md") {
+      content: "";
+      position: absolute;
+      height: attr(axis-length);
+      width: 0;
+      box-shadow: 0 0 0 $width-education-axis / 2 $color-education-axis-primary;
+      left: 0;
+      @include media("lg") {
+        left: 50%;
+      }
+    }
+  }
+  .education-card {
+    padding: $padding-education-card;
+    position: absolute;
+    overflow: visible;
+    @include flex($dir: column, $just: space-between, $align-coaxis: center);
+    width: $width-education-card-xs;
+    height: $height-education-card;
+    box-shadow: 0 #{-$width-education-axis} 0  $color-education-axis-primary;
+    left: calc(50% - #{$width-education-card-xs / 2});
+    cursor: pointer;
+    transition-property: box-shadow, background-color, opacity;
+    transition-duration: $transition-time-sm;
+    transition-timing-function: linear;
+    @include media("sm") {
+      width: $width-education-card-sm;
+      left: calc(50% - #{$width-education-card-sm / 2});
+    }
+    @include media("md") {
+      box-shadow: none;
+      width: $width-education-card;
+      left: $length-education-assoc-line;
+      &::before {
+        width: $radius-education-axis * 2;
+        height: $radius-education-axis * 2;
+        border-radius: 50%;
+        box-shadow: 0 0 0 $width-education-axis $color-education-axis-primary;
+        background-color: $color-education-axis-secondary;
+        color: $color-txt-primary;
+        text-align: center;
+        vertical-align: middle;
+        line-height: $radius-education-axis * 2;
+        content: attr(level);
+        position: absolute;
+        margin: 0 !important;
+        left: 0;
+        z-index: 2;
+        top: - $radius-education-axis;
+        left: - $length-education-assoc-line - $radius-education-axis;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: $length-education-assoc-line + $width-education-card - $width-education-axis / 2;
+        height: 0;
+        left: -$length-education-assoc-line;
+        box-shadow: 0 0 0 $width-education-axis/2 $color-education-axis-primary;
+        z-index: 1;
+        top: 0;
+      }
+    }
+    &-overlay {
+      position: absolute;
+      overflow: hidden !important;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      @include flex($dir: row, $just: center, $align-coaxis: center);
+      transition: height $transition-time-xs linear;
+    }
+    &:hover .education-card-overlay {
+      height: 100%;
+    }
+    &-view-btn {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  @for $i from 1 through $max-education-allowable {
+    .education-#{$i} {
+      top: ($i - 1) * $gutter-education-card-md;
+      @include media("lg") {
+        top: ($i - 1) * $gutter-education-card-lg;
+        @if $i % 2 == 0 {
+          right: auto;
+          left: calc(50% + #{$length-education-assoc-line});
+        }
+        @else {
+          left: auto;
+          right: calc(50% - $length-education-assoc-line);
+          &::before {
+            left: auto;
+            right: - $length-education-assoc-line - $radius-education-axis;
+          }
+          &::after {
+            left: auto;
+            right: - $length-education-assoc-line;
+          }
+        }
+      }
+    }
+  }
+}
+
+#modal-education {
+  .bg-img {
+    height: 100% !important;
+    min-height: 100% !important;
+    min-width: 100% !important;
+    opacity: $opacity-bg-card;
+  }
+}
+
+.education-page {
+  position: absolute;
+  height: 80vh;
+  transition: transform $transition-time-lg ease-in;
+  transform-origin: 0 0 0;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  &-front {
+    position: absolute;
+    background-color: $color-education-page-bg;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  &-back {
+    transform-origin: 50% 50% 0;
+    transform: rotateY(180deg);
+    background-color: $color-education-page-bg;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    &-img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+  &-wrapper {
+    @include mediaall("height", $heights-education-pages);
+  }
+  &-control-wrapper {
+    z-index: 2000;
+    height: $height-education-page-control;
+  }
+  &-back-img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+  }
+}
+
+.education-page-flipped {
+  transform: rotateY(-90deg);
+}
+
+.z0 {
+  z-index: 0 !important;
+}
+
+#education-book {
+  @include mediaall("width", $widths-education-pages);
+  @include mediaall("height", $heights-education-pages);
+	perspective: $perspective-depth-education-book;
+}

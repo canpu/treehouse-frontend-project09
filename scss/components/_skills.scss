@@ -1,0 +1,41 @@
+#section-skills {
+  background-color: $color-tertiary;
+  .bg-img {
+  }
+  .section-wrapper {
+    padding: $padding-section-skills;
+  }
+}
+
+.skill-group {
+  background-color: rgba($color-skillset, 0.35);
+  border-radius: $radius-skillset;
+  box-shadow: 0 0 2px 2px rgba($color-skillset, 0.5);
+  transition-property: background-color, transform;
+  transition-duration: $transition-time-sm;
+  transition-timing-function: linear;
+  &:hover {
+    background-color: rgba($color-skillset, 0.85);
+  }
+}
+
+.skill-act-tube {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: rgba(darken($color-primary, 10%), 0.75);
+}
+
+.skill-max-tube {
+  width: 100%;
+  height: $height-skill-bar;
+  position: relative;
+  background-color: rgba(lighten($color-primary, 10%), 0.5);
+  p {
+    width: 100%;
+    height: $height-skill-bar;
+    position: absolute;
+    z-index: 1;
+  }
+}

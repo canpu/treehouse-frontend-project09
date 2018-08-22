@@ -28,7 +28,7 @@
     height: $height-navbar-shrink - 8px;
     &:focus {
       outline: none;
-      box-shadow: 0 0 3px 3px rgba($color-secondary, 0.5);
+      box-shadow: 0 0 3px 3px rgba($color-secondary, $opacity-bg-img);
     }
     &-icon {
       height: 90%;
@@ -41,17 +41,18 @@
 
 .nav-link {
   transition-property: color, background-color, height;
-  transition-duration: $transition-time-sm;
+  transition-duration: $transition-time-md;
   transition-timing-function: linear;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  border-radius: 0 !important;
   &:focus, &:hover {
     outline: none;
     color: $color-txt-primary !important;
   }
   &:hover {
-    background-color: rgba(darken($color-secondary, 10%), 0.75) !important;
+    background-color: darken($color-secondary, 10%) !important;
   }
 }
 
@@ -59,9 +60,10 @@
   transition-property: height;
   transition-duration: $transition-time-sm;
   transition-timing-function: linear;
+  border-radius: 0;
 }
 
 .active {
-  background-color: rgba(darken($color-secondary, 15%), 0.75) !important;
+  background-color: darken($color-secondary, 15%) !important;
   color: $color-txt-primary !important;
 }

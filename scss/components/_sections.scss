@@ -1,14 +1,28 @@
-#section-welcome {
-  min-height: 100vh;
-  background-color: $color-tertiary;
-  border-radius: 0;
-  margin-bottom: 0;
-  .icon {
-    max-width: $size-profile;
-    max-height: $size-profile;
+.section {
+  align-items: center;
+  &-header {
+    align-items: center;
+    width: 235px;
+    padding: 0;
+    z-index: 1;
+  }
+  & > .bg-img {
+    opacity: 0.1;
+    min-width: 100%;
+    height: 100%;
+
   }
 }
 
-#section-education {
-  background-color: $color-quaternary;
+.section {
+  min-height: 60vh;
+  transition: padding $transition-time-sm linear;
+  padding: $height-navbar-shrink / 2;
+  @include media("md") {
+    padding: $height-navbar-normal * 2 $height-navbar-normal;
+  }
+  &-wrapper {
+    margin-top: $margin-section-wrapper;
+    margin-bottom: $margin-section-wrapper;
+  }
 }

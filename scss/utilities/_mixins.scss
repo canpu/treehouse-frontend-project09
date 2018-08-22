@@ -19,7 +19,7 @@
 
 /* Media Query */
 @mixin media($screen-type) {
-  @if $screen-type != 'sm' and $screen-type != 'md' and $screen-type != 'lg' and $screen-type != 'xl' {
+  @if $screen-type != 'xs' and $screen-type != 'sm' and $screen-type != 'md' and $screen-type != 'lg' and $screen-type != 'xl' {
     @error "#{$screen-type} is not supported by media queries.";
   }
   @else {
@@ -30,26 +30,15 @@
   }
 }
 
-@mixin allmedia($property, $values) {
-  #{$property}: #{map-get($values, 'mobile')};
+@mixin mediaall($property, $values) {
   @each $screen-type in $screen-types {
-    @if $screen-type != 'mobile' {
-        @include media($screen-type) {
-          #{$property}: #{map-get($values, $screen-type)};
-        }
+    @if $screen-type == 'xs' {
+      #{$property}: #{map-get($values, $screen-type)};
+    }
+    @else {
+      @include media($screen-type) {
+        #{$property}: #{map-get($values, $screen-type)};
       }
     }
-}
-
-/* BEM */
-@mixin element($element) {
-  &__#{$element} {
-    @content;
-  }
-}
-
-@mixin modifier($modifier) {
-  &--#{$modifier} {
-    @content;
   }
 }
