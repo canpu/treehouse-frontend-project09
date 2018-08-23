@@ -466,8 +466,7 @@ $(document).ready(() => {
   /* Resizing */
   function centerBgImg() {
     $(".bg-img").each(() => {
-      let padding = $(this.parentNode).css("padding-left");
-      $(this).css("left", `calc(50% - ${$(this).width() / 2 + padding}px)`);
+      $(this).css("left", `calc(50% - ${$(this).width() / 2 + $(this.parentNode).css("padding-left")}px)`);
     });
   }
 
