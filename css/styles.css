@@ -286,9 +286,12 @@
 /* line 7, F:/Github/treehouse-frontend-project09/scss/components/_images.scss */
 .bg-img {
   position: absolute;
+  height: 100%;
+  top: 0;
+  margin: auto;
 }
 
-/* line 10, F:/Github/treehouse-frontend-project09/scss/components/_images.scss */
+/* line 13, F:/Github/treehouse-frontend-project09/scss/components/_images.scss */
 .bg-container {
   position: relative;
   overflow: hidden;

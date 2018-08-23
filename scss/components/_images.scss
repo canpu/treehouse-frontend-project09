@@ -6,6 +6,9 @@
 .bg {
   &-img {
     position: absolute;
+    height: 100%;
+    top: 0;
+    margin: auto;
   }
   &-container {
     position: relative;
