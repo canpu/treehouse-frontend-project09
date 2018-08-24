@@ -1170,14 +1170,15 @@
   transition-property: background-color, transform;
   transition-duration: 0.25s;
   transition-timing-function: linear;
+  position: relative;
 }
 
-/* line 17, F:/Github/treehouse-frontend-project09/scss/components/_skills.scss */
+/* line 18, F:/Github/treehouse-frontend-project09/scss/components/_skills.scss */
 .skill-group:hover {
   background-color: rgba(153, 153, 255, 0.85);
 }
 
-/* line 22, F:/Github/treehouse-frontend-project09/scss/components/_skills.scss */
+/* line 23, F:/Github/treehouse-frontend-project09/scss/components/_skills.scss */
 .skill-act-tube {
   position: absolute;
   left: 0;
@@ -1186,7 +1187,7 @@
   background-color: rgba(62, 44, 90, 0.75);
 }
 
-/* line 30, F:/Github/treehouse-frontend-project09/scss/components/_skills.scss */
+/* line 31, F:/Github/treehouse-frontend-project09/scss/components/_skills.scss */
 .skill-max-tube {
   width: 100%;
   height: 20px;
@@ -1194,7 +1195,7 @@
   background-color: rgba(110, 78, 158, 0.5);
 }
 
-/* line 35, F:/Github/treehouse-frontend-project09/scss/components/_skills.scss */
+/* line 36, F:/Github/treehouse-frontend-project09/scss/components/_skills.scss */
 .skill-max-tube p {
   width: 100%;
   height: 20px;
