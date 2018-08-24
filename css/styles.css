@@ -1179,7 +1179,7 @@
 
 /* line 20, F:/Github/treehouse-frontend-project09/scss/components/_skills.scss */
 .skill-group-wrapper {
-  position: static;
+  position: static !important;
 }
 
 /* line 25, F:/Github/treehouse-frontend-project09/scss/components/_skills.scss */
