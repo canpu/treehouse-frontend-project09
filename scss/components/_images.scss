@@ -9,9 +9,15 @@
     height: 100%;
     top: 0;
     min-width: 100%;
+    background-position: center;
   }
   &-container {
     position: relative;
     overflow: hidden;
   }
+}
+
+#section-education > .bg-img {
+  left: 0;
+  background-image: url("../images/institutes/university.jpg");
 }
