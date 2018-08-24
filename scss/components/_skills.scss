@@ -14,9 +14,11 @@
   transition-property: background-color, transform;
   transition-duration: $transition-time-sm;
   transition-timing-function: linear;
-  position: relative;
   &:hover {
     background-color: rgba($color-skillset, 0.85);
+  }
+  &-wrapper {
+    position: static;
   }
 }
 
