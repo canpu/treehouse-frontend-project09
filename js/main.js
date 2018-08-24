@@ -129,6 +129,7 @@ $(document).ready(() => {
         let $target = $(event.target);
         $target = $target.hasClass("education-card") ? $target : $target.parents(".education-card");
         window.setTimeout(() => educationBookFlipTo($target.index()), 250);
+        window.setTimeout(() => centerBgImg(), 250);
       });
 
       /* Create education experiences in the modal window
@@ -186,6 +187,7 @@ $(document).ready(() => {
       $("#education-book-cover").css("z-index", `${educationOverlayZindex}`);
       $("#education-book .modal-previous").click(educationBookFlipPrevious);
       $("#education-book .modal-next").click(educationBookFlipNext);
+
     },
 
     error: function(jqXHR, textStatus, errorThrown) {
