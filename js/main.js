@@ -268,13 +268,14 @@ $(document).ready(() => {
         let $skillSet = $('<div class="skill-group col-md-5 my-4 d-flex flex-column p-3"></div>');
         $skillSet.append(`<h4 class="h5 text-center text-white w-100 mb-3">${skillSet.skillSetName}</h4>`)
                  .appendTo($skillSetsWrapper);
-        let $skillSetWrapper = $('<div class="skill-group-wrapper h-100 justify-content-around align-items-center d-flex flex-column justify-content-center align-items-stretch"></div>');
-        $skillSetWrapper.appendTo($skillSet);
+        // let $skillSetWrapper = $('<div class="skill-group-wrapper h-100 justify-content-around align-items-center d-flex flex-column justify-content-center align-items-stretch"></div>');
+        // $skillSetWrapper.appendTo($skillSet);
         skillSet.skills.forEach(skill => {
           let $skillTube = $('<div class="skill-max-tube w-100 mb-3"></div>');
           $skillTube.append(`<p class="text-center text-white w-100 small my-0">${skill.skillName}</p>`)
-                    .append(`<div class="skill-act-tube" score="${skill.skillScore}"></div>`)
-                    .appendTo($skillSetWrapper);
+                    .append(`<div class="skill-act-tube" data-score="${skill.skillScore}"></div>`)
+                    // .appendTo($skillSetWrapper);
+                    .appendTo($skillSet);
         });
       });
       ScrollReveal(revealFromBottomSetting).reveal(".skill-group");
@@ -284,8 +285,8 @@ $(document).ready(() => {
         let $skillBars = $skillSet.find(".skill-act-tube");
         $skillBars.each(function() {
           $(this).animate({
-            width: `${$(this).attr("score")}%`
-          }, $(this).attr("score") / skillBarGrowSpeed);
+            width: `${$(this).attr("data-score")}%`
+          }, $(this).attr("data-score") / skillBarGrowSpeed);
         });
       }
 
