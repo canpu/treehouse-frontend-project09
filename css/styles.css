@@ -289,20 +289,20 @@
   height: 100%;
   top: 0;
   min-width: 100%;
-  background-position: center;
 }
 
-/* line 14, F:/Github/treehouse-frontend-project09/scss/components/_images.scss */
+/* line 13, F:/Github/treehouse-frontend-project09/scss/components/_images.scss */
 .bg-container {
   position: relative;
   overflow: hidden;
 }
 
-/* line 20, F:/Github/treehouse-frontend-project09/scss/components/_images.scss */
+/* line 19, F:/Github/treehouse-frontend-project09/scss/components/_images.scss */
 #section-education > .bg-img {
   left: 0;
   background-image: url("../images/institutes/university.jpg");
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
 }
 
 /* line 1, F:/Github/treehouse-frontend-project09/scss/components/_sections.scss */

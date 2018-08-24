@@ -9,7 +9,6 @@
     height: 100%;
     top: 0;
     min-width: 100%;
-    background-position: center;
   }
   &-container {
     position: relative;
@@ -20,5 +19,6 @@
 #section-education > .bg-img {
   left: 0;
   background-image: url("../images/institutes/university.jpg");
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
 }
