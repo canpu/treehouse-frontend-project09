@@ -9,6 +9,12 @@
     height: 100%;
     top: 0;
     min-width: 100%;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
   }
   &-container {
     position: relative;

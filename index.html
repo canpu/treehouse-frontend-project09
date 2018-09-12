@@ -8,35 +8,37 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body data-spy="scroll" data-target="#navlist-main" data-offset="0">
-    <nav id="navbar-main" class="navbar navbar-expand-md navbar-dark fixed-top p-0">
-      <div class="navbar-container">
+  <body class="body" data-spy="scroll" data-target="#navlist-main" data-offset="250">
+    <nav id="navbar-main" class="navbar navbar-expand-md navbar-dark fixed-top justify-content-end p-0">
+      <div class="navbar-container d-flex flex-row align-items-center">
         <h2 class="navbar-brand text-white h2 p-0 my-auto mr-auto ml-4 ml-md-5 text-nonselectable">Can Pu</h2>
-        <button class="navbar-toggler mr-4" data-toggle="collapse" type="button" data-target="#navlist-main"
-          aria-controls="navlist-main" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler mr-4" data-toggle="collapse" type="button" data-target="#navlist-main" aria-controls="navlist-main" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-      <div id="navlist-main" class="collapse navbar-collapse navbar-list-wrapper mr-md-5">
+      <div id="navlist-main" class="collapse navbar-collapse navbar-list-wrapper mr-md-5 justify-content-end w-100 w-md-auto">
         <ul class="navbar-nav nav-pills">
           <li class="nav-item d-table">
-            <a class="nav-link w-100 w-md-auto ripple" href="#section-education">Education</a>
+            <a class="nav-link ripple scroll-trigger" href="#section-education">Education</a>
           </li>
           <li class="nav-item d-table">
-            <a class="nav-link w-100 w-md-auto ripple" href="#section-skills">Skills</a>
+            <a class="nav-link ripple scroll-trigger" href="#section-skills">Skills</a>
           </li>
           <li class="nav-item d-table">
-            <a class="nav-link w-100 w-md-auto ripple" href="#section-portfolio">Portfolio</a>
+            <a class="nav-link ripple scroll-trigger" href="#section-portfolio">Portfolio</a>
           </li>
           <li class="nav-item d-table">
-            <a class="nav-link w-100 w-md-auto ripple" href="#section-contact">Contact</a>
+            <a class="nav-link ripple scroll-trigger" href="#section-publications">Publications</a>
+          </li>
+          <li class="nav-item d-table">
+            <a class="nav-link ripple scroll-trigger" href="#section-contact">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
-    <main>
+    <main class="main">
       <div id="section-welcome" class="d-flex flex-column justify-content-center align-items-center bg-container jumbotron">
-        <img class="bg-img h-100 w-100" src="images/coding.gif" alt="wormhole">
+        <img class="bg-img h-100" src="images/coding.gif" alt="flying code">
         <div class="container px-4 px-md-5 mx-auto d-flex flex-column justify-content-between">
           <div class="row">
             <div class="col d-none d-md-block container">
@@ -44,11 +46,11 @@
             </div>
             <div class="col d-flex flex-column justify-content-center">
               <h1 class="display-4 text-white text-center text-md-left reveal-left">Can Pu</h1>
-              <p class="lead short-introduction text-center text-md-left reveal-right">Seeking Front End Internship</p>
+              <p class="lead short-introduction text-center text-md-left reveal-right">Pursuing Optimization and Statistics</p>
             </div>
           </div>
           <div class="row mt-2 mt-md-5 text-white d-flex flex-row justify-content-around">
-            <a id="btn-view-more" class="btn btn-icon btn-view-more btn-primary btn-lg reveal-left ripple mt-auto d-block col-md mb-4 mb-md-0 mr-md-4 btn-outline-info" href="#section-education" role="button"><p class="d-block">View More</p></a>
+            <a id="btn-view-more" class="btn btn-icon btn-view-more btn-primary btn-lg reveal-left ripple mt-auto d-block col-md mb-4 mb-md-0 mr-md-4 btn-outline-info scroll-trigger" href="#section-education" role="button"><p class="d-block">View More</p></a>
             <a id="btn-download-resume" class="btn btn-icon btn-download btn-primary btn-lg reveal-right ripple mt-auto d-block col-md ml-md-4 btn-outline-info" href="doc/can-pu.pdf" download><p class="d-block">Download Resume</p></a>
           </div>
         </div>
@@ -81,6 +83,27 @@
         <div class="section-wrapper d-flex flex-row justify-content-around align-items-stretch flex-wrap w-100">
         </div>
       </section>
+      <section id="section-publications" class="section d-flex flex-column justify-content-center align-items-center bg-container">
+        <img class="bg-img" src="images/book.jpg" alt="book">
+        <header class="section-header container row reveal-bottom d-flex flex-row justify-content-between">
+          <img class="section-icon" src="images/icons/gallery.svg" alt="gallery icon">
+          <h2 class="section-heading h4 text-center mb-0">PUBLICATIONS</h2>
+        </header>
+        <div class="section-wrapper d-flex flex-row justify-content-around align-items-stretch flex-wrap w-100">
+          <div class="publication-card reveal-bottom row d-flex flex-row justify-content-around align-items-center">
+            <img class="d-none d-md-block col-md-2 publisher-img" src="images/JCTT-cover.jpg" alt="cover of Journal of Computational and Theoretical Transport">
+            <div class="col-md-10 d-flex flex-column align-items-center">
+              <p class="text-center text-white h5 mb-4"><strong>Mathematical and numerical validation of the simplified spherical harmonics approach for time-dependent anisotropic-scattering transport problems in homogeneous media</strong></p>
+              <p class="text-center text-white mb-1">Journal of Computational and Theoretical Transport</p>
+              <p class="text-center text-white mb-2">Year: 2017</p>
+              <div class="row btn-row">
+                <a class="btn btn-icon btn-lg btn-arxiv btn-primary btn-sm ripple mt-auto ripple d-block col-md mb-4 mb-md-0 mr-md-4 btn-outline-info" href="https://arxiv.org/abs/1701.00313" target="_blank" role="button"><p class="d-block">ArXiv</p></a>
+                <a class="btn btn-icon btn-lg btn-publisher btn-primary btn-sm ripple mt-auto ripple d-block col-md mb-4 mb-md-0 mr-md-4 btn-outline-info" href="https://www.tandfonline.com/doi/abs/10.1080/23324309.2017.1352516?journalCode=ltty21" target="_blank" role="button"><p class="d-block">Journal</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="section-contact" class="section d-flex flex-column justify-content-center align-items-center bg-container">
         <img class="bg-img" src="images/email.jpg" alt="email">
         <header class="section-header container row reveal-bottom d-flex flex-row justify-content-between">
@@ -96,24 +119,24 @@
                   <p class="small text-center">You are emailing me through <a class="text-white" href="https://formspree.io/" target="_blank">Formspree</a></p>
                 </div>
                 <div class="message-row row justify-content-between d-flex align-items-center">
-                  <div class=" col-lg-5 reveal-bottom p-0 d-flex flex-nowrap align-items-center mb-1">
-                    <label class="mb-1 mr-1" for="messager-name">Name: </label>
+                  <div class="message-group col-lg-5 reveal-bottom p-0 d-flex flex-nowrap align-items-center">
+                    <label class="mr-2" for="messager-name">Name:</label>
                     <input class="input w-100" type="text" name="name" id="messager-name" placeholder="Required" required>
                   </div>
-                  <div class="col-lg-6 reveal-bottom p-0 d-flex flex-nowrap align-items-center mb-1">
-                    <label class="mb-1 mr-1" for="messager-phone">Phone: </label>
+                  <div class="message-group col-lg-6 reveal-bottom p-0 d-flex flex-nowrap align-items-center">
+                    <label class="mr-2" for="messager-phone">Phone:</label>
                     <input class="input w-100" type="tel" name="phone" id="messager-phone" placeholder="Optional; 10 digits" pattern="[0-9]{10}">
                   </div>
                 </div>
-                <div class="message-row row reveal-bottom align-items-center flex-nowrap">
-                  <label class="mb-1 mr-1" for="messager-email">Email: </label>
+                <div class="message-group message-row row reveal-bottom align-items-center flex-nowrap">
+                  <label class="mr-2" for="messager-email">Email:</label>
                   <input class="input w-100" type="email" name="email" id="messager-email" placeholder="Required" required>
                 </div>
                 <div class="message-row row reveal-bottom">
-                  <label class="mb-1" for="messager-message">Message: </label>
+                  <label class="mb-1" for="messager-message">Message:</label>
                   <textarea class="input w-100" name="message" id="messager-message" placeholder="Enter your message here" required></textarea>
                 </div>
-                <div class="message-row d-flex flex-row justify-content-around align-items-center mt-2 reveal-bottom">
+                <div class="button-row message-row d-flex flex-row justify-content-around align-items-center reveal-bottom">
                   <button id="btn-send" type="submit" class="btn btn-info ripple">Send</button>
                   <button id="btn-reset" type="reset" class="btn btn-info ripple">Reset</button>
                 </div>
@@ -121,15 +144,15 @@
             </div>
             <br class="h-100 d-none b-1 d-md-block"/>
             <hr class="w-100 d-block d-md-none"/>
-            <div class="col-md-5 d-flex flex-column justify-content-between align-items-start text-white mt-4">
+            <div class="col-md-5 d-flex flex-column justify-content-between align-items-center align-items-md-start text-white mt-4">
               <h3 class="text-center h4 reveal-bottom w-100 mx-auto">Other Methods</h3>
-              <div class="d-flex flex-row justify-content-start align-items-center mt-4 reveal-bottom flex-wrap">
-                <p class="lead mb-2">Email</p>
-                <a class="text-grey w-100" href="mailto:pucanmail@gmail.com">pucanmail@gmail.com</a>
+              <div class="d-flex flex-column align-items-center align-items-md-start mt-4 reveal-bottom flex-wrap">
+                <p class="lead mb-2 text-center">Email</p>
+                <a class="text-grey w-100 text-center" href="mailto:pucan@mit.com">pucan@mit.com</a>
               </div>
-              <div class="d-flex flex-row justify-content-start align-items-center mt-4 reveal-bottom flex-wrap">
-                <p class="lead mb-2">Address</p>
-                <p class="text-grey w-100"><a class="text-grey" href="https://www.google.com/maps/place/Ashdown+House,+Cambridge,+MA+02139/@42.3587599,-71.1033547,17z/data=!3m1!4b1!4m5!3m4!1s0x89e379fe394d8e4d:0x9a6e300d855d7c9d!8m2!3d42.3587599!4d-71.101166" target="_blank">Ashdown House, Cambridge, MA</a></p>
+              <div class="d-flex flex-column align-items-center align-items-md-start mt-4 reveal-bottom flex-wrap">
+                <p class="lead mb-2 text-center">Address</p>
+                <p class="text-grey w-100 text-center"><a class="text-grey" href="https://www.google.com/maps/place/Ashdown+House,+Cambridge,+MA+02139/@42.3587599,-71.1033547,17z/data=!3m1!4b1!4m5!3m4!1s0x89e379fe394d8e4d:0x9a6e300d855d7c9d!8m2!3d42.3587599!4d-71.101166" target="_blank">Ashdown House, Cambridge, MA</a></p>
               </div>
               <div class="social-container d-flex flex-row justify-content-around align-items-center mt-4 flex-wrap">
                 <a class="social-icon-container reveal-bottom m-3" title="Gmail" href="mailto:pucanmail@gmail.com" target="_blank">
@@ -186,7 +209,7 @@
       <div class="citation small text-center">Icons made by <a href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </footer>
     <div id="modal-education" class="modal fade w-100" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
+      <div class="modal-dialog d-flex flex-row justify-content-center">
         <div id="education-book" class="modal-content">
           <div id="education-book-cover" class="education-page w-100 h-100" data-page="0">
             <div class="education-page-front bg-container d-flex flex-column align-items-center justify-content-center">
@@ -229,6 +252,7 @@
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/picturefill.min.js"></script>
     <script src="js/scrollreveal.min.js"></script>
     <script src="js/main.js"></script>
   </body>

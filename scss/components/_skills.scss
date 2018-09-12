@@ -1,7 +1,5 @@
 #section-skills {
   background-color: $color-tertiary;
-  .bg-img {
-  }
   .section-wrapper {
     padding: $padding-section-skills;
   }
@@ -17,9 +15,6 @@
   position: static !important;
   &:hover {
     background-color: rgba($color-skillset, 0.85);
-  }
-  &-wrapper {
-    position: static !important;
   }
 }
 

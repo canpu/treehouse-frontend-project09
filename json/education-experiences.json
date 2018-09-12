@@ -45,8 +45,8 @@
       "degree": "TechDegree",
       "degreeAbbreviation": "TechDegree",
       "startYear": 2018,
-      "endYear": null,
-      "completionStatus": "in progress",
+      "endYear": 2018,
+      "completionStatus": "completed",
       "major": "Front-End Web Development",
       "track": null,
       "gradeName": null,
@@ -55,7 +55,7 @@
       "honor": null,
       "brief": ["The Front End Web Development TechDegree program is lauched by TreeHouse, an online education organization. It consists of 28 courses, 140 quizzes, 197 challenges, 9 projects and a proctored final exam.",
                 "The program covers HTML, CSS, animations, Sass, JavaScript, jQuery, AJAX, Bootstrap, SVGs, responsive designs, web accessibility, performance optimization, audio and video, and so on.",
-                "I am completing the program soon."
+                "I have earned the best grade \"Exceeds Expectation\" on all projects."
       ]
     }, {
       "institute": "Georgia Institute of Technology",
@@ -75,6 +75,25 @@
       "honor": null,
       "brief": ["I am currently in the master's program of GaTech. Though I had a lot of programming experience in computational math/physics, this program has been enriching me by the systematic methodologies of computer science.",
                 "Having gained abundant knowledge in software engineering, machine learning, databases and Android development from the program, I will also take courses in artificial intelligence, computer photography, computer vision, algorithms and operating system in the future."]
+    }, {
+      "institute": "Massachusetts Institute of Technology",
+      "instituteAbbreviation": "MIT",
+      "instituteImg": "images/institutes/mit.jpg",
+      "level": "doctoral",
+      "degree": "Doctor of Phylosophy",
+      "degreeAbbreviation": "Ph.D.",
+      "startYear": 2018,
+      "endYear": null,
+      "completionStatus": "in progress",
+      "major": "Nuclear Science and Engineering",
+      "track": null,
+      "gradeName": "GPA",
+      "grade": null,
+      "gradePossible": "5.00",
+      "honor": null,
+      "brief": ["I am new in the doctoral program of MIT NSE. More interested in methodologies than engineering applications, I am actively looking for advisors or/and research opportunities in statistics and/or optimization or related fields.",
+                "I have both theoretical training and programming experience, and any relevant information will be appreciated."
+      ]
     }
   ]
 }

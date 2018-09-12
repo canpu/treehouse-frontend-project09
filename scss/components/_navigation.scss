@@ -2,13 +2,10 @@
   transition-property: background-color, min-height, height;
   transition-duration: $transition-time-sm;
   transition-timing-function: linear;
-  justify-content: flex-end;
   &-container {
-    transition-property: height;
-    transition-duration: $transition-time-sm;
-    transition-timing-function: linear;
+    transition: height $transition-time-sm linear;
     width: 100%;
-    @include flex($dir: row, $just: flex-end, $align-coaxis: center);
+    justify-content: flex-end;
     @include media("md") {
       width: auto;
       justify-content: space-between;
@@ -16,19 +13,19 @@
   }
   &-brand {
     transition: margin $transition-time-sm linear;
-    height: $height-navbar-shrink;
+    height: $height-navbar-shrink !important;
+    line-height: $height-navbar-shrink !important;
   }
   &-list-wrapper {
-    justify-content: flex-end;
     overflow: hidden !important;
     transition: height $transition-time-sm linear;
   }
   &-toggler {
     transition: margin $transition-time-sm linear;
-    height: $height-navbar-shrink - 8px;
+    height: $height-navbar-toggler;
     &:focus {
       outline: none;
-      box-shadow: 0 0 3px 3px rgba($color-secondary, $opacity-bg-img);
+      box-shadow: 0 0 $border-width-sm $border-width-sm rgba($color-secondary, $opacity-bg-img);
     }
     &-icon {
       height: 90%;
@@ -47,6 +44,12 @@
   vertical-align: middle;
   text-align: center;
   border-radius: 0 !important;
+  @include media("md") {
+    width: auto !important;
+  }
+  @media (max-width: #{map-get($breakpoints, 'md')}) {
+    width: 100vw;
+  }
   &:focus, &:hover {
     outline: none;
     color: $color-txt-primary !important;

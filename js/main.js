@@ -15,7 +15,7 @@ const degreeLevelAbbrev = {"doctoral": "D",
                            "master": "M",
                            "bachelor": "B",
                            "professional": "P"};
-const host = "https://canpu.github.io/treehouse-frontend-project09";
+const host = "https://canpu.github.io";
 const educationCardOpacity = 0.15;
 const educationCardOpacityHover = 0.75;
 const educationOverlayZindex = 1050;
@@ -158,10 +158,10 @@ $(document).ready(() => {
              .find(".education-page-front")
              .append(``)
              .append(`<div class="education-page-wrapper bg-container d-flex flex-column align-items-center">
-                        <div class="education-page-control-wrapper modal-header w-100 d-flex flex-row align-items-center justify-content-around py-0">
+                        <div class="education-page-control-wrapper modal-header w-100 d-flex flex-row align-items-center justify-content-around py-0" style="z-index: 2000;">
                           <button type="button" class="modal-previous close"><span>&#8249;</span></button>
                           <button type="button" class="modal-next close"><span>&#8250;</span></button>
-                          <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <button type="button" class="modal-close close"" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
                         <img class="bg-img" src="${education.instituteImg}" alt="${education.instituteImg != null ? education.instituteAbbreviation : null}" />
                         <div class="modal-body d-flex flex-column align-items-center">
@@ -215,12 +215,12 @@ $(document).ready(() => {
           let $page = $(pages[flipIndex]);
           if (flipIndex >= targetEducationPageIndex) {
           $page.removeClass("education-page-flipped");
-          window.setTimeout(() => $page.removeClass("z0"), animationLong * 0.15);
+          window.setTimeout(() => $page.removeClass("z0"), animationLong * 0.0);
           window.setTimeout(() => {
             --flipIndex;
             flipPreviousPage();}, animationShort);
           } else {
-            window.setTimeout(() => isEducationBookAnimated = false, animationLong * 0.85);
+            window.setTimeout(() => isEducationBookAnimated = false, animationLong * 0.95);
           }
         };
         flipPreviousPage();
@@ -230,12 +230,12 @@ $(document).ready(() => {
           let $page = $(pages[flipIndex]);
           if (flipIndex <= targetEducationPageIndex - 1) {
           $page.addClass("education-page-flipped");
-          window.setTimeout(() => $page.addClass("z0"), animationLong * 0.85);
+          window.setTimeout(() => $page.addClass("z0"), animationLong * 0.95);
           window.setTimeout(() => {
             ++flipIndex;
             flipNextPage();}, animationShort);
           } else {
-            window.setTimeout(() => isEducationBookAnimated = false, animationLong * 0.85);
+            window.setTimeout(() => isEducationBookAnimated = false, animationLong * 0.95);
           }
         };
         flipNextPage();
@@ -312,7 +312,7 @@ $(document).ready(() => {
     dataType: 'json',
     success: function(data) {
       projects = data.projects;
-
+      console.log("A");
       /* Display project information */
       projects.forEach(project => {
         let $project = $('<div class="project-card mb-5 mx-3 mx-md-4" data-toggle="modal" data-target="#modal-project"></div>');
@@ -418,9 +418,9 @@ $(document).ready(() => {
   /* Scrollspy Effect
     Making the scrolling smoother
   */
-  $("#navbar-main a, #btn-view-more").click(function(event) {
-    windowPosition = $window.scrollTop();
+  $(".scroll-trigger").click(function(event) {
     event.preventDefault();
+    windowPosition = $window.scrollTop();
     if (this.hash !== "") {
       let $hash = $(this.hash);
       let targetPosition = $hash.offset().top;
@@ -469,12 +469,12 @@ $(document).ready(() => {
   /* Resizing */
   function centerBgImg() {
     Array.prototype.slice.call(document.getElementsByClassName("bg-img"))
-         .forEach((img) => {
-           $(img).css("left", `calc(50% - ${$(img).width() / 2}px)`);
-         });
+      .forEach((img) => {
+        $(img).css("left", `calc(50% - ${$(img).width() / 2}px)`);
+      });
   }
 
-  centerBgImg();
+  window.setTimeout(() => centerBgImg(), 10);
 
   $window.resize(event => {
     windowPosition = $window.scrollTop();

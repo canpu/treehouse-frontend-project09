@@ -7,6 +7,9 @@ $breakpoints: (
   'xl': 1200px
 );
 
+/* Border */
+$border-width-sm: 3px;
+
 /* Colors */
 $color-primary: rgb(86, 61, 124); // purple
 $color-secondary: rgb(136, 77, 255); // purple
@@ -23,6 +26,7 @@ $font-family-other: 'Merriweather', 'Roboto', georgia;
 $font-size-web-heading: 2rem;
 $height-navbar-normal: 50px;
 $height-navbar-shrink: 40px;
+$height-navbar-toggler: $height-navbar-shrink - 8px;
 
 /* Transition */
 $transition-time-xs: 0.15s;
@@ -32,7 +36,7 @@ $transition-time-lg: 0.75s;
 $transition-time-xl: 1s;
 
 /* Images */
-$size-section-icon: 35px;
+$size-section-icon: 30px;
 $opacity-bg-img: 0.075;
 $opacity-bg-card: 0.15;
 

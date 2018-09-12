@@ -184,5 +184,6 @@
 #education-book {
   @include mediaall("width", $widths-education-pages);
   @include mediaall("height", $heights-education-pages);
+  transform-style: preserve-3d;
 	perspective: $perspective-depth-education-book;
 }

@@ -1,0 +1,19 @@
+$flipping-directions: ('x', 'y');
+
+@each $flipping-direction in $flipping-directions {
+  .book-#{$flipping-direction} {
+    &-page {
+      @if $flipping-direction == 'x' {
+        transform-origin: 50% 0 0;
+      } @elseif $flipping-direction == 'y' {
+
+      }
+      &-front {
+      }
+      &-back {
+        transform-origin: center;
+        transform: rotate#{to-upper-case($flipping-direction)}(180deg);
+      }
+    }
+  }
+}

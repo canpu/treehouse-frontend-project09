@@ -1,0 +1,35 @@
+#section-publications {
+  background-color: $color-secondary !important;
+}
+
+.publication {
+  &-card {
+    width: 95%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px 2px rgba(darken($color-primary, 15%), 0.75);
+    background-color: rgba(lighten($color-primary, 10%), 0.75);
+    padding: 25px;
+    transition: background-color $transition-time-md linear,
+                box-shadow $transition-time-md linear;
+    p {
+      z-index: 1;
+    }
+    .btn-row {
+      width: 200px;
+      @include media("md") {
+        width: 300px;
+      }
+    }
+    &:hover {
+      background-color: rgba(lighten($color-primary, 5%), 0.85);
+      box-shadow: inset 0 0 3px 1px rgba(darken($color-primary, 5%), 0.8);
+    }
+  }
+}
+
+.publisher-img {
+  max-height: 350px;
+}

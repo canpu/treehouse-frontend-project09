@@ -3,10 +3,16 @@
   textarea {
     min-height: 100px;
   }
+  label {
+    margin-bottom: 0;
+  }
+  .button-row {
+    margin-top: 25px;
+  }
   .input {
     background-color: rgba(lighten($color-contact, 15%), 0.4);
     border-radius: 5px;
-    padding-left: 30px;
+    padding-left: 27px;
     padding-right: 5px;
     resize: none;
     color: $color-txt-primary;
@@ -18,6 +24,9 @@
     transition-property: background-color;
     transition-duration: $transition-time-sm;
     transition-timing-function: linear;
+    @include media("md") {
+      margin-bottom: 0;
+    }
     &:valid {
       &:not(:placeholder-shown) {
         background-image: url("../images/icons/check.svg");
@@ -36,9 +45,6 @@
       background-color: rgba(darken($color-contact, 15%), 0.4);
       outline: none;
     }
-  }
-  .message-row:not(:last-child) {
-    margin-bottom: 15px;
   }
   .btn {
     width: 45%;
@@ -85,4 +91,8 @@ $social-icons: ('gmail', 'facebook', 'twitter', 'linkedin', 'github', 'treehouse
       }
     }
   }
+}
+
+.message-group {
+  margin-bottom: 20px;
 }
