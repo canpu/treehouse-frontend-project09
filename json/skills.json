@@ -26,11 +26,15 @@
         {
           "skillName": "R",
           "skillScore": 27
+        },
+        {
+          "skillName": "PHP",
+          "skillScore": 40
         }
       ]
     },
     {
-      "skillSetName": "Front End",
+      "skillSetName": "Web Development",
       "skills": [
         {
           "skillName": "HTML",
@@ -59,6 +63,10 @@
         {
           "skillName": "Bootstrap",
           "skillScore": 57
+        },
+        {
+          "skillName": "SQL",
+          "skillScore": 53
         }
       ]
     },
